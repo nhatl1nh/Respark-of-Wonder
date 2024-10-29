@@ -1,1 +1,54 @@
-
+@font-face {
+    font-family: DFVN Pexel Grotesk;
+    src: url(../font/DFVN\ Pexel\ Grotesk.woff) format('woff');
+}
+@font-face {
+    font-family: Ganh Type - Regular;
+    src: url(../font/Ganh\ Type\ -\ Regular.woff) format('woff');
+}
+@font-face {
+    font-family: Ganh Type - RegularItalic;
+    src: url(../font/Ganh\ Type\ -\ RegularItalic.woff) format('woff');
+    font-style: italic;
+}
+@font-face {
+    font-family: Redaction35-BWXjw;
+    src: url(../font/Redaction35-BWXjw.woff) format('woff');
+}
+@font-face {
+    font-family: Redaction35Italic-rgDrB;
+    src: url(../font/Redaction35Italic-rgDrB.woff) format('woff');
+    font-style: italic;
+}
+@font-face {
+    font-family:SF Pixelate Bold Oblique;
+    src: url(../font/SF\ Pixelate\ Bold\ Oblique.woff) format('woff');
+    font-weight: bold;
+}
+@font-face {
+    font-family: SF Pixelate Oblique;
+    src: url(../font/SF\ Pixelate\ Oblique.woff) format('woff');
+}
+:root {
+    --color-green-angel: #5DDA00;
+    --color-green-witch: #00D241;
+    --color-green-astronut: #00D18B;
+    --color-yellow-adventure: #FFBB00;
+    --color-yellow-magician: #FF8100;
+    --color-yellow-superhero: #FF103A;
+    --color-blue-artist: #0095BD;
+    --color-blue-conqueror: #0083C2;
+    --color-blue-elf: #005AA2;
+    --color-pink-superstar: #B0318B;
+    --color-pink-clown: #F20071;
+    --color-pink-cupid: #FF1380;
+}
+body {
+    margin: 0;
+    padding: 2rem;
+    width: 100vw;
+    height: 100vh;
+    height: 100dvh;
+    overflow: hidden;
+    box-sizing: border-box;
+}
