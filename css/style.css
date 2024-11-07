@@ -1,32 +1,32 @@
 @font-face {
-    font-family: DFVN Pexel Grotesk;
+    font-family: 'DFVN Pexel Grotesk';
     src: url(../font/DFVN\ Pexel\ Grotesk.woff) format('woff');
 }
 @font-face {
-    font-family: Ganh Type - Regular;
+    font-family: 'Ganh Type - Regular';
     src: url(../font/Ganh\ Type\ -\ Regular.woff) format('woff');
 }
 @font-face {
-    font-family: Ganh Type - RegularItalic;
+    font-family: 'Ganh Type - RegularItalic';
     src: url(../font/Ganh\ Type\ -\ RegularItalic.woff) format('woff');
     font-style: italic;
 }
 @font-face {
-    font-family: Redaction35-BWXjw;
+    font-family: 'Redaction35-BWXjw';
     src: url(../font/Redaction35-BWXjw.woff) format('woff');
 }
 @font-face {
-    font-family: Redaction35Italic-rgDrB;
+    font-family: 'Redaction35Italic-rgDrB';
     src: url(../font/Redaction35Italic-rgDrB.woff) format('woff');
     font-style: italic;
 }
 @font-face {
-    font-family:SF Pixelate Bold Oblique;
+    font-family: 'SF Pixelate Bold Oblique';
     src: url(../font/SF\ Pixelate\ Bold\ Oblique.woff) format('woff');
     font-weight: bold;
 }
 @font-face {
-    font-family: SF Pixelate Oblique;
+    font-family: 'SF Pixelate Oblique';
     src: url(../font/SF\ Pixelate\ Oblique.woff) format('woff');
 }
 :root {
@@ -45,10 +45,186 @@
 }
 body {
     margin: 0;
-    padding: 2rem;
     width: 100vw;
     height: 100vh;
     height: 100dvh;
     overflow: hidden;
     box-sizing: border-box;
+}
+.logo {
+width: 100px;
+height: 100px;
+margin-top: 2vw;
+margin-left: 2vw;
+display: block;
+}
+/************ RESULT ************/
+
+#background {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, #5DDE00 0%, #CEEFB7 50%, #5DDE00 100%);
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    animation: backgroundAnimation 10s linear infinite;
+    background-size: 100% 200%;
+
+
+}
+@keyframes backgroundAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 0% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+p.text {
+    font-family: 'Ganh Type - Regular';
+    font-size: 1.2vw;
+    color: black;
+    text-align: center;
+    margin-top: 28vw;
+    margin-right: 5vw;
+    margin-left: 7vw;
+    border-right: 5px solid;
+    width: 85%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+        typing 3.5s steps(40, end),
+        cursor .75s step-end infinite alternate;
+}
+@keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+.btn {
+    border-radius: 35px;
+    border: 2px solid white;
+    background: none;
+    padding: 10px 60px;
+    font-size: 2.5vw;
+    cursor: pointer;
+    margin-top: 2vw;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    margin-left:40vw;
+    font-family: 'SF Pixelate Oblique' ;
+    box-shadow: 0 10px 8px rgba(255, 255, 255, 0.501);
+}
+.btn:hover {
+    color: black;
+}
+.btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: var(--color-green-angel);
+    z-index: -1;
+    transition: 0.8s;
+    top: 0;
+    border-radius: 0 0 50% 50%;
+    height: 180%;
+}
+.btn:hover::before {
+    height: 0;
+}
+.circle {
+    width: 450px;
+    height: 450px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+@media (max-width: 1200px) {
+    .logo {
+        width: 80px;
+        height: 80px;
+        margin-top: 3vw;
+        margin-left: 3vw;
+    }
+    p.text {
+        font-size: 1.5vw;
+        margin-top: 35vw;
+        margin-right: 6vw;
+        margin-left: 8vw;
+    }
+    .btn {
+        font-size: 3vw;
+        margin-top: 2vw;
+        margin-left: 35vw;
+    }
+    .circle {
+        width: 450px;
+        height: 450px;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        width: 80px;
+        height: 80px;
+        margin-top: 4vw;
+        margin-left: 4vw;
+    }
+    p.text {
+        font-size: 3vw;
+        margin-top: 85vw;
+        margin-right: 7vw;
+        margin-left: 9vw;
+    }
+    .btn {
+        font-size: 4vw;
+        margin-top: 5vw;
+        margin-left: 26vw;
+    }
+    .circle {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 80px;
+        height: 80px;
+        margin-top: 5vw;
+        margin-left: 5vw;
+    }
+    p.text {
+        font-size: 3vw;
+        margin-top: 110vw;
+        margin-right: 7vw;
+        margin-left: 9vw;
+    }
+    .btn {
+        font-size: 5vw;
+        margin-top: 5vw;
+        margin-left: 26vw;
+    }
+    .circle {
+        width:  350px;
+        height:  350px;
+    }
 }
