@@ -601,21 +601,21 @@ ul {
     img#bg8 {
         width: 80%;
         height: 100px;
-        top: 36%;
+        top: 37%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
     #questionbg {
-        width: 340px;
+        width: 350px;
         height: 60px;
         position: absolute;
-        top: 33%;
+        top: 37%;
         left: 50%;
     }
     .question_text {
         width: 80%;
         font-size: 2.6vw;
-        margin-top: -31vw;
+        margin-top: -35vw;
     }
     .answer-button,
     .answer-buttonnvat {
@@ -626,7 +626,7 @@ ul {
     }
     ul {
         width: 80%;
-        bottom: 15vh;
+        bottom: 8vh;
         left: 33%;
     }
     li {
@@ -634,7 +634,7 @@ ul {
     }
     img#bg4-left {
         width: 25%;
-        bottom: 8vh;
+        bottom: 2vh;
         left: 4vh;
         transform: translate(0, 0);
         z-index: -9;
@@ -694,7 +694,7 @@ ul {
 
     ul {
         width: 80%;
-        bottom: 15vh;
+        bottom: 10vh;
         left: 33%;
     }
     li {
