@@ -1,33 +1,33 @@
 @font-face {
     font-family: 'DFVN Pexel Grotesk';
-    src: url(../font/DFVN\ Pexel\ Grotesk.woff) format('woff');
+    src: url('../font/DFVN Pexel Grotesk.woff') format('woff');
 }
 @font-face {
     font-family: 'Ganh Type - Regular';
-    src: url(../font/Ganh\ Type\ -\ Regular.woff) format('woff');
+    src: url('../font/Ganh Type - Regular.woff') format('woff');
 }
 @font-face {
     font-family: 'Ganh Type - RegularItalic';
-    src: url(../font/Ganh\ Type\ -\ RegularItalic.woff) format('woff');
+    src: url('../font/Ganh Type - RegularItalic.woff') format('woff');
     font-style: italic;
 }
 @font-face {
     font-family: 'Redaction35-BWXjw';
-    src: url(../font/Redaction35-BWXjw.woff) format('woff');
+    src: url('../font/Redaction35-BWXjw.woff') format('woff');
 }
 @font-face {
     font-family: 'Redaction35Italic-rgDrB';
-    src: url(../font/Redaction35Italic-rgDrB.woff) format('woff');
+    src: url('../font/Redaction35Italic-rgDrB.woff') format('woff');
     font-style: italic;
 }
 @font-face {
     font-family: 'SF Pixelate Bold Oblique';
-    src: url(../font/SF\ Pixelate\ Bold\ Oblique.woff) format('woff');
+    src: url('../font/SF Pixelate Bold Oblique.woff') format('woff');
     font-weight: bold;
 }
 @font-face {
     font-family: 'SF Pixelate Oblique';
-    src: url(../font/SF\ Pixelate\ Oblique.woff) format('woff');
+    src: url('../font/SF Pixelate Oblique.woff') format('woff');
 }
 :root {
     --color-green-angel: #5DDA00;
@@ -69,20 +69,12 @@ display: block;
 }
 @media (max-width: 768px) {
     .logo {
-      width: 4rem;
-      height: 4rem;
-      margin-top: 2rem;
-      margin-left: 3rem;
+        width: 4rem;
+        height: 4rem;
+        margin-top: 1rem;
+        margin-left: 2rem;
     }
   }
-@media (max-width: 390px) {
-    .logo {
-        width: 3.125rem;
-        height: 3.125rem;
-        margin-top: 3.125rem;
-        margin-left: 3.75rem;
-    }
-}
 /************ RESULT ************/
 /***********CONSTRUCTOR***********/
 .backgroundconstructor {
@@ -584,4 +576,102 @@ ul {
     background: #9EDD42;
     transition: background 0.5s ease, transform 0.3s ease;
     transform: scale(1.05);
+}
+@media (max-width: 480px) {
+    img#bg1 {
+        height: 150vh;
+        width: 210vw;
+        transform: translate(-50%, -50%) rotate(90deg);
+        left: 60%;
+        top: 60%;
+        position: absolute;
+    }
+    img#bg3 {
+        width: 98%;
+        top: 15%;
+        left: 60%
+    }
+    img#bg4-right,
+    img#bg5,
+    img#bg6,
+    img#bg7 {
+        display: none;
+    }
+    #questionbg {
+        width: 350px;
+        height: 60px;
+        position: absolute;
+        top: 36%;
+        left: 60%;
+    }
+    .question_text {
+        width: 50%;
+        font-size: 2vw;
+        margin-top: -22vw;
+    }
+    .answer-button,
+    .answer-buttonnvat {
+        width: 300px;
+        height: 80px;
+        font-size: 10px;
+    }
+    ul {
+        width: 80%
+    }
+}
+@media (max-width: 390px) {
+    img#bg1 {
+        width: 180vw;
+        transform: translate(-50%, -50%) rotate(90deg);
+        left: 50%;
+        top: 50%;
+        position: absolute;
+    }
+
+    img#bg2 {
+        width: 80px;
+        height: 80px;
+    }
+
+    img#bg3 {
+        width: 70%;
+    }
+
+    img#bg4-left, img#bg4-right {
+        width: 12%;
+    }
+
+    img#bg5, img#bg6 {
+        width: 10%;
+    }
+
+    img#bg7 {
+        width: 12%;
+    }
+
+    #questionbg {
+        width: 400px;
+        height: 70px;
+    }
+
+    img#bg8 {
+        width: 28%;
+        height: 80px;
+    }
+
+    .question_text {
+        width: 24%;
+        font-size: 2vw;
+    }
+
+    .answer-button, .answer-buttonnvat {
+        width: 280px;
+        height: 70px;
+        font-size: 14px;
+    }
+
+    ul {
+        width: 80%;
+        bottom: 5vh;
+    }
 }
