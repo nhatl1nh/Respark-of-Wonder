@@ -580,10 +580,10 @@ ul {
 @media (max-width: 480px) {
     img#bg1 {
         height: 150vh;
-        width: 210vw;
+        width: 190vw;
         transform: translate(-50%, -50%) rotate(90deg);
-        left: 60%;
-        top: 60%;
+        left: 52%;
+        top: 53%;
         position: absolute;
     }
     img#bg3 {
@@ -621,10 +621,11 @@ ul {
 }
 @media (max-width: 390px) {
     img#bg1 {
-        width: 180vw;
+        height: 150vh;
+        width: 190vw;
         transform: translate(-50%, -50%) rotate(90deg);
-        left: 50%;
-        top: 50%;
+        left: 52%;
+        top: 53%;
         position: absolute;
     }
 
