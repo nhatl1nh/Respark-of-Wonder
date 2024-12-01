@@ -625,7 +625,7 @@ ul {
         margin-top: 0;
         margin-bottom: 0;
         position: absolute;
-        top: 40%;
+        top: 38%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
@@ -638,8 +638,8 @@ ul {
     }
     ul {
         width: 80%;
-        bottom: 15vh;
-        left: 35%;
+        bottom: 10vh;
+        left: 37%;
     }
     li {
         width: 70%;
