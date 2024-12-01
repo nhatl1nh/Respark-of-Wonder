@@ -655,7 +655,7 @@ ul {
         transform: translate(-50%, -50%);
     }
     #questionbg {
-        width: 400px;
+        width: 380px;
         height: 60px;
         position: absolute;
         top: 34%;
@@ -685,15 +685,15 @@ ul {
     }
     ul {
         width: 80%;
-        bottom: 10vh;
+        bottom: 12vh;
         left: 37%;
     }
     li {
         width: 70%;
     }
     img#bg4-left {
-        width: 25%;
-        bottom: 2vh;
+        width: 22%;
+        bottom: -1vh;
         left: 4vh;
         transform: translate(0, 0);
         z-index: -9;
