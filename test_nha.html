@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Respark of Wonder</title>
+        <link rel="stylesheet" href="css/style.css">
+        <!--SE0-->
+        <meta name="description" content="Respark of Wonder is a project to see your innerchild">
+        <meta name="keywords" content="Respark of Wonder, innerchild, wonder, project">
+        <meta name="author" content="Mass Media">
+        <!--Favicon-->
+        <link rel="icon" href="assets/ROW logo.svg" type="image/x-icon">
+        <link rel="shortcut icon" href="assets/ROW logo.svg" type="image/x-icon">
+        <!-- Mobile icons -->
+        <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+        <link rel="apple-touch-icon" href="./apple-touch-icon.png">
+        <link rel="manifest" href="./assets/app.manifest">
+        <meta name="theme-color" content="#000">
+
+    </head>
+    <body>
+        <div class="background"></div>
+        <nav class="topnav">
+            <div class="logo">
+                <a href="index.html"><svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 244.97 281.87">
+                    <g id="DISPLAY">
+                      <g>
+                        <path d="M95.29,158.99v-54.85H25.01v54.78H0c0-3.15,0-5.95,0-8.75,0-41.12-.02-82.24.01-123.36C.04,7.56,7.5-.1,26.35.04c27.22.21,54.43.88,81.64.87,30.88-.02,61.77-.58,92.65-.89,3.06-.03,6.12,0,9.65,0v25.21h-89.12v41.16c2.96,0,5.99,0,9.02,0,20.17,0,40.33-.06,60.5.02,15.86.07,23.96,7.76,24.22,23.41.26,15.45.3,30.91-.03,46.35-.31,14.54-8.9,23.14-23.14,23.23-30.38.18-60.76.06-91.14.04-1.52,0-3.04-.25-5.32-.44ZM95.74,77.63V26.16H25.69v51.21h70.33v25.51c19.44.81,24.89,13.45,24.48,30.32h68.61v-41.79h-69.7v-25.36c-7.27,8.37-13.98,13.39-23.67,11.57Z"/>
+                        <path d="M24.83,256.76h41.93c0-3.18,0-5.96,0-8.74,0-25.64.26-51.28-.17-76.91-.12-7.12,2.17-9.3,8.94-8.59,4.89.51,9.88.1,16,.1v94.29h41.77l-.16-.17v24.82h-42.07v-23.52h-23.33v23.46H25v-24.91l-.17.18Z"/>
+                        <path d="M25,256.58c-13.55,1.31-24.24-6.01-24.62-18.94-.72-24.26-.1-48.55,0-72.83,0-.44.48-.88,1.23-2.17,5.97,0,12.48-.44,18.86.29,1.73.2,4.33,3.95,4.35,6.09.23,29.25.07,58.5,0,87.74,0,0,.17-.18.17-.18Z"/>
+                        <path d="M133.31,256.91v-93.71h23.8c.32,1.46.92,2.93.92,4.4.06,22.23.31,44.46-.05,66.69-.25,15.14-9.74,23.34-24.83,22.45,0,0,.16.17.16.17Z"/>
+                        <path d="M178.64,208.63c17.99-3.11,30.5-10.77,33.61-30.53,2.8,19.61,15.64,27.17,32.72,30.74-6.25,2.24-12.37,5.02-18.79,6.57-6.37,1.53-7.05,6.7-8.72,11.27-1.72,4.7-2.88,9.6-5.41,15.21-2.67-19.6-12.22-31.81-33.41-33.27Z"/>
+                        <path d="M214.74,258.28v23.58h-24.55v-23.58h24.55Z"/>
+                      </g>
+                    </g>
+                  </svg></a>
+            </div>
+        </nav>
+        <div class="testnha-bg" alt="testnha-bg">
+            <img id="bg1" src="assets/Test/BG 1.svg" alt="testnha-bg">
+            <img id="bg2" src="assets/Test/BG 1- rightbottom.svg" alt="testnha-bg">
+            <img id="bg3" src="assets/Test/GIF/GIF1.gif" alt="GIF Image">
+            <img id="bg4-left" src="assets/Test/gamebutton.svg" alt="testnha-bg">
+            <img id="bg4-right" src="assets/Test/gamebutton.svg" alt="testnha-bg">
+            <img id="bg5" src="assets/Test/RSOW sticker.svg" alt="testnha-bg">
+            <img id="bg6" src="assets/Test/DAIZI sticker.svg" alt="testnha-bg">
+            <img id="bg7" src="assets/Test/BG 2.svg" alt="testnha-bg">
+            <div id="questionbg"></div>
+            <img id="bg8" src="assets/Test/blipping.svg" alt="testnha-bg">
+        </div>
+        <div x-data="quizApp">
+            <divc class="question" x-show="currentQuestion < questions.length">
+                <h2 class="question_text" x-text="questions[currentQuestion].question"></h2>
+                <ul>
+                    <template x-for="(answer, index) in questions[currentQuestion].answers" :key="index">
+                        <li>
+                            <button @click="selectAnswer(index)" x-text="answer" class="answer-button"></button>
+                                    </li>
+                                    </template>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </li>
+                    </template>
+                </ul>
+            </div>
+        
+        </div>
+    </body>
+
+</html>
+<script src="js/script.js"></script>
+<script>
+document.addEventListener('alpine:init', () => {
+    Alpine.data('quizApp', () => ({
+        currentQuestion: 0,
+        score: 0,
+        answersCount: [0, 0, 0, 0],
+        questions: [
+            { question: 'As you begin your journey into the mysterious forest, alongside your childhood friends to find the hidden treasure in a chest, you will be the one who...',
+                answers: ['Leads the conversation among people and connects everyone together', 'Always comes up with ideas to ace the challenge that shocks them', 'Plans for upcoming to-do things to make sure the mission can be done in a smart way', 'Enjoys the challenge to the fullest and have fun with other players'] },
+            { question: 'After claiming the chest, you and your friends walk to find a place to take some rest. On the chest, there are 4 words engraved on it. Your choice would be:',
+                answers: ['Friends', 'Amazement', 'Control', 'Truth'] },
+            { question: 'Your crew reaches a place to rest for tonight. As the night walks in the atmosphere, you feel less at ease, and a fear that randomly popped up in your mind would be?', 
+                answers: ['Feeling lonely', 'Feeling useless', 'Being viewed as "mediocre"', 'Lose track of what you are doing'] },
+            { question: 'It is a cloud of thoughts, and you suddenly remember moments that you feel no confidence in you, they are occasions when', 
+                answers: ['You cannot blend in people around you', 'Dealing with multiple aspects of a problem', 'Coping with emergency situations', 'You are not in your own realm'] },
+            { question: 'The next day, all of you decide to open the chest. Besides the golden tokens, an angel appears and says "Please give a message for your future days". You want to say to your future version that:', 
+                answers: ['Improve yourself through lessons from your relationships', 'Try hard to be the one-and-only person that comes with bold ideas.', ' Express your abilities to get recognitions that push your to further achievements', 'Stay strong-minded for upcoming challenges that offer you precious lessons'] }
+        ],
+        gradients: [
+            'linear-gradient(180deg, #5DDE00 0%, #FDFCFB 50%, #5DDE00 100%)',
+            'linear-gradient(180deg, #FFBB00 0%, #FDFCFB 50%, #FFBB00 100%)',
+            'linear-gradient(180deg, #0095BD 0%, #FDFCFB 50%, #0095BD 100%)',
+            'linear-gradient(180deg, #F990DF 0%, #FDFCFB 50%, #F990DF 100%)',
+            'linear-gradient(180deg, #00D241 0%, #FDFCFB 50%, #00D241 100%)'
+        ],
+        gradientsbutton: [
+            'linear-gradient(to bottom, #5DDE00 , #FDFCFB , #5DDE00 )',
+            'linear-gradient(to bottom, #FFBB00 , #FDFCFB , #FFBB00 )',
+            'linear-gradient(to bottom, #0095BD , #FDFCFB , #0095BD )',
+            'linear-gradient(to bottom, #F990DF , #FDFCFB , #F990DF )',
+            'linear-gradient(to bottom, #00D241 , #FDFCFB , #00D241 )'
+        ],
+        selectAnswer(index) {
+            if (this.currentQuestion < 2) {
+                this.answersCount[index] += 2;
+            } else {
+                this.answersCount[index]++;
+            }
+            this.currentQuestion++;
+            if (this.currentQuestion >= this.questions.length) {
+                const maxCount = Math.max(...this.answersCount);
+                const resultIndex = this.answersCount.indexOf(maxCount);
+                const result = ['A', 'B', 'C', 'D'][resultIndex];
+                let resultPage = '';
+                switch (result) {
+                    case 'A':
+                        resultPage = 'nha_networker.html';
+                        break;
+                    case 'B':
+                        resultPage = 'nha_pioneer.html';
+                        break;
+                    case 'C':
+                        resultPage = 'nha_constructor.html';
+                        break;
+                    case 'D':
+                        resultPage = 'nha_dreamchaser.html';
+                        break;
+                }
+                alert(`Your result is: ${result}`);
+                window.location.href = resultPage;
+            } else {
+                const bg3Element = document.getElementById('bg3');
+                if (bg3Element) {
+                    const answerButtons = document.querySelectorAll('.answer-button');
+                    const hoverColors = ['#9EDD42', '#FF8100', '#0095BD', '#F20071', '#00D241'];
+                    answerButtons.forEach(button => {
+                        button.style.background = this.gradientsbutton[this.currentQuestion];
+                        button.addEventListener('mouseover', () => {
+                            button.style.background = hoverColors[this.currentQuestion];
+                        });
+                        button.addEventListener('mouseout', () => {
+                            button.style.background = this.gradientsbutton[this.currentQuestion];
+                        });
+                    });
+                    bg3Element.src = `assets/Test/GIF/GIF${this.currentQuestion + 1}.gif`;
+                    bg3Element.onload = function() {
+                        console.log('Image loaded successfully');
+                    };
+                    bg3Element.onerror = function() {
+                        console.error('Error loading image');
+                    };
+                } else {
+                    console.error('Element with id "bg3" not found');
+                }
+
+                const bodyElement = document.body;
+                if (bodyElement) {
+                    bodyElement.style.background = this.gradients[this.currentQuestion];
+                    bodyElement.style.animation = 'backgroundAnimation 10s infinite';
+                } else {
+                    console.error('Body element not found');
+                }
+
+                const backgroundDiv = document.querySelector('.background');
+                if (backgroundDiv) {
+                    backgroundDiv.style.background = this.gradients[this.currentQuestion];
+                    backgroundDiv.style.animation = 'backgroundAnimation 10s infinite';
+                } else {
+                    console.error('Element with class "background" not found');
+                }
+            }
+        },
+        init() {
+            const bodyElement = document.body;
+            if (bodyElement) {
+                bodyElement.style.background = this.gradients[this.currentQuestion];
+            } else {
+                console.error('Body element not found');
+            }
+
+            const backgroundDiv = document.querySelector('.background');
+            if (backgroundDiv) {
+                backgroundDiv.style.background = this.gradients[this.currentQuestion];
+                backgroundDiv.style.animation = 'backgroundAnimation 10s infinite';
+            } else {
+                console.error('Element with class "background" not found');
+            }
+        }
+    }));
+});
+</script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
