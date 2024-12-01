@@ -601,7 +601,7 @@ ul {
     img#bg8 {
         width: 80%;
         height: 100px;
-        top: 37%;
+        top: 41%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
@@ -610,12 +610,12 @@ ul {
         height: 60px;
         position: absolute;
         top: 37%;
-        left: 50%;
+        left: 49%;
     }
     .question_text {
         width: 80%;
         font-size: 2.6vw;
-        margin-top: -35vw;
+        margin-top: -18vw;
     }
     .answer-button,
     .answer-buttonnvat {
