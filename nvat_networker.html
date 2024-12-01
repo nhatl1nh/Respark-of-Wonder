@@ -58,7 +58,7 @@
 <script>
     setTimeout(function() {
         if (Alpine.store('quizApp').currentQuestion >= Alpine.store('quizApp').questions.length) {
-            window.location.href = `./assets/RESULT/Networker/N${personality}`;
+            window.location.href = `./assets/RESULT/Networker/${personality}.png`;
         }
     }, 100000); // Increased timeout to 100000ms (100 seconds)
 
@@ -74,13 +74,15 @@ document.addEventListener('alpine:init', () => {
             { question: 'Now you are having dinner with your parents. You and your father are talking about today lessons at school, and he asks you: So, to yourself, what is the greatest thing?',
                  answers: ['Be able to live your life to the fullest.', 'Always connect with great people.', 'Enjoy intimate times with your loved ones'] },
             { question: 'You feel tired after studying. Lying on the bed, you think of every memories in your life, and you realize that after all, you really want to', 
-                answers: ['Trapped by boredom and feel no enthusism to live.', 'Invisble or too visible in a crowd.', 'A person that no one cares about.'  ] },
+                answers: ['Have great moments and sway all the blues in this world.', 'Always have a place that you belong to.', 'Be surrounded by things that you love.'  ] },
+            { question: 'Then, some bad memories arise. From those memories, you think that it is fearful if you are', 
+                answers: ['Trapped by boredom and feel no enthusism to live.', 'Invisble or too visible in a crowd.', 'A person that no one cares about.'] },
             { question: 'Good morning. Now you are having breakfast while watching TV. You see a character says that "Everyone should have their own way to assert themselves". A way for you could be?', 
-                answers: ['Letting people know how fun it is to be with you', 'Being a down-to-earth master that can see through things in seconds.', 'Being emotionally and physically attractive.'] },
+                answers: ['Letting people know how fun it is to be with you.', 'Being a down-to-earth master that can see through things in seconds.', 'Being emotionally and physically attractive.'] },
             { question: 'You are in the class, and today, the teacher asks you: What is a bad habit to yourself that you do quite frequently?', 
-                answers: ['Wasting time doing nothing', 'Try to be someone else to blend in rather than being you', ' Be a people pleaser.'] },
+                answers: ['Wasting time doing nothing.', 'Try to be someone else to blend in rather than being you.', 'Be a people pleaser.'] }, 
             { question: 'Then, she asks everyone to write on the board a word about a characteristic that is precious to them. Your choice would be:', 
-                answers: ['Energetic.', 'Empathetic.', 'Grateful.'] }    
+                answers: ['Energetic.', 'Empathetic.', 'Grateful.'] }       
         ],
         gradients: [
             'linear-gradient(180deg, #FF8100 0%, #FDFCFB 50%, #FF8100 100%)',
@@ -137,21 +139,21 @@ document.addEventListener('alpine:init', () => {
 
             let personality;
             if (scoreA > scoreB && scoreA > scoreC) {
-                personality = 'A';
-                alert('Result A');
+                personality = 'Clown';
+                
             } else if (scoreB > scoreA && scoreB > scoreC) {
-                personality = 'B';
-                alert('Result B');
+                personality = 'Superstar';
+                
             } else if (scoreC > scoreA && scoreC > scoreB) {
-                personality = 'C';
-                alert('Result C');
+                personality = 'Cupid';
+                
             } else {
                 personality = 'tie';
-                alert('It\'s a tie!');
+                
             }
 
             setTimeout(() => {
-                window.location.href = `./assets/RESULT/Networker/N${personality}.jpg`;
+                window.location.href = `./assets/RESULT/Networker/${personality}.png`;
             }, 1500);
         },
         selectAnswer(index) {
