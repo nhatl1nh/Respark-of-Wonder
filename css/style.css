@@ -629,8 +629,8 @@ ul {
     }
     ul {
         width: 80%;
-        bottom: 8vh;
-        left: 33%;
+        bottom: 15vh;
+        left: 35%;
     }
     li {
         width: 70%;
@@ -644,6 +644,9 @@ ul {
     }
 }
 @media (max-width: 390px) {
+    .logo {
+        display:none;
+    }
     img#bg1 {
         height: 150vh;
         width: 190vw;
