@@ -612,13 +612,22 @@ ul {
         width: 350px;
         height: 60px;
         position: absolute;
-        top: 28%;
+        top: 34%;
         left: 50%;
+        transform: translate(-50%, -50%);
     }
     .question_text {
-        width: 80%;
+        width: 75%;
         font-size: 2.6vw;
         margin-top: -35vw;
+    }
+    .question_text {
+        margin-top: 0;
+        margin-bottom: 0;
+        position: absolute;
+        top: 34%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     .answer-button,
     .answer-buttonnvat {
@@ -644,9 +653,7 @@ ul {
     }
 }
 @media (max-width: 390px) {
-    .logo {
-        display:none;
-    }
+    
     img#bg1 {
         height: 150vh;
         width: 190vw;
