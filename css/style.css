@@ -650,12 +650,12 @@ ul {
     img#bg8 {
         width: 80%;
         height: 100px;
-        top: 34%;
+        top: 36%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
     #questionbg {
-        width: 370px;
+        width: 380px;
         height: 60px;
         position: absolute;
         top: 34%;
@@ -666,6 +666,7 @@ ul {
         width: 75%;
         font-size: 2.6vw;
         margin-top: -35vw;
+        font-family: 'DFVN Pexel Grotesk' ;
     }
     .question_text {
         margin-top: 0;
