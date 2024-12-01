@@ -120,9 +120,9 @@ body {
     }
     .answer-button,
     .answer-buttonnvat {
-        width: 90vw;
-        height: 12vw;
-        font-size: 5vw;
+        width: 350px;
+        height: 70px;
+        font-size: 10px;
     }
     ul {
         width: 90vw;
@@ -373,9 +373,7 @@ ul {
     img#bg4-right {
         width: 10%;
     }
-    img #bg4-left {
-       
-    
+    img#bg4-left {
         display: none;
     }
     img#bg5,
@@ -390,7 +388,7 @@ ul {
         height: 60px;
     }
     #questionbg {
-        width: 300px;
+        width: 330px;
         height: 60px;
         position: absolute;
         top: 35%;
@@ -400,7 +398,7 @@ ul {
     .question_text {
         width: 50%;
         font-size: 2vw;
-        margin-top:-22vw;
+        margin-top: -22vw;
     }
     .answer-button,
     .answer-buttonnvat {
@@ -411,23 +409,24 @@ ul {
     ul {
         flex-direction: column;
         flex-wrap: nowrap;
-        width: 60%;
-        gap: 5px;
-        bottom: 1px:
-
-}
-li {
-    width: 100%;
-    margin-bottom: -20px;
-}
+        width: 80%;
+        /* gap: 5px; */
+    
+        bottom: 8vh
+    }
+    li {
+       
+        margin-bottom: -100px;
+    }
 }
 
 @media (max-width: 480px) {
     img#bg1 {
-        height: 100%;
-        width: 100%;
-        left: 0;
-        top: 0;
+        height: 160vh;
+        width: 180vw;
+        transform: translate(-50%, -50%) rotate(90deg);
+        left: 50%;
+        top: 50%;
         position: absolute;
     }
     img#bg2 {
@@ -435,13 +434,15 @@ li {
         height: 50px;
     }
     img#bg3 {
-        width: 20%;
+        width: 90%;
     }
     img#bg4-left {
         display: none;
     }
     img#bg4-right {
-        width: 8%;
+        width: 25%;
+        left: 8vw;
+        bottom: 25vw;
     }
     img#bg5,
     img#bg6 {
@@ -455,21 +456,27 @@ li {
         height: 50px;
     }
     #questionbg {
-        width: 250px;
-        height: 50px;
+        height: 60px;
+        top: 33%;
     }
     .question_text {
-        width: 50%;
+        width: 75%;
         font-size: 2.5vw;
+        top: 43%;
     }
     .answer-button,
     .answer-buttonnvat {
-        width: 200px;
-        height: 50px;
+        width: 300px;
+        height: 80px;
         font-size: 10px;
-    }
     ul {
-        width: 50%;
+        width: 80%
+    }
+}
+
+@media (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) {
+    img#bg3 {
+        width: 55%;
     }
 }
 
