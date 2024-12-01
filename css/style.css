@@ -406,7 +406,7 @@ ul {
 }
 
 .answer-buttonnvat:hover {
-    background: #FF8100;
+    background: #9EDD42;
     transition: background 0.5s ease, transform 0.3s ease;
     transform: scale(1.05);
 }
