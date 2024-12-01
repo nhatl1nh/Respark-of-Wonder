@@ -72,7 +72,7 @@ display: block;
         width: 4rem;
         height: 4rem;
         margin-top: 1rem;
-        margin-left: 2rem;
+        margin-left: 1rem;
     }
   }
 /************ RESULT ************/
@@ -606,7 +606,7 @@ ul {
         transform: translate(-50%, -50%);
     }
     #questionbg {
-        width: 360px;
+        width: 340px;
         height: 60px;
         position: absolute;
         top: 33%;
@@ -615,7 +615,7 @@ ul {
     .question_text {
         width: 80%;
         font-size: 2.6vw;
-        margin-top: -32vw;
+        margin-top: -31vw;
     }
     .answer-button,
     .answer-buttonnvat {
@@ -626,8 +626,8 @@ ul {
     }
     ul {
         width: 80%;
-        bottom: 20vh;
-        left: 37%;
+        bottom: 18vh;
+        left: 33%;
     }
     li {
         width: 70%;
