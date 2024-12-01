@@ -1,3 +1,12 @@
+/* Import font */
+@font-face {
+    font-family: 'DFVN Pexel Grotesk';
+    src: url('path/to/DFVN-Pexel-Grotesk.woff2') format('woff2'),
+         url('path/to/DFVN-Pexel-Grotesk.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Base styles */
 body {
     margin: 0;
@@ -260,10 +269,10 @@ img#bg8 {
     cursor: pointer;
     display: block;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    font-family: 'DFVN Pexel Grotesk', sans-serif;
+    font-family: 'DFVN Pexel Grotesk',sans-serif;
+
+
 }
-.answer-buttonnvat {
-    display: block;
 .answer-buttonnvat {
     display: block;
     width: 336px;
@@ -279,8 +288,12 @@ img#bg8 {
     cursor: pointer;
     display: block;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    font-family: 'DFVN Pexel Grotesk', sans-serif;
+    font-family: 'DFVN Pexel Grotesk',sans-serif;
+
+
 }
+ul {
+    list-style-type: none;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
