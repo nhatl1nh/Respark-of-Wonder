@@ -58,7 +58,7 @@
 <script>
     setTimeout(function() {
         if (Alpine.store('quizApp').currentQuestion >= Alpine.store('quizApp').questions.length) {
-            window.location.href = `./assets/RESULT/Dreamchaser/${personality}.png`;
+            window.location.href = `./assets/RESULT/Constructor/${personality}.png`;
         }
     }, 100000); // Increased timeout to 100000ms (100 seconds)
 
@@ -70,19 +70,20 @@ document.addEventListener('alpine:init', () => {
         selectedAnswers: [],
         questions: [
             { question: 'You are in a class with your friends, and it is quite sleepy. Then, your teacher suddenly ask you: Can you tell me what you believe?',
-                 answers: ['Nothing is more important than you being you.', 'Knowing something is great, but knowing its true nature is even better.', 'Potentials should never be locked in.', ] },
+                 answers: ['People are trying hard in life for many things, but above all, it is power.', 'Nothing can be done if it is not imagined.', 'The way you treat people reflect the way you treat yourself.', ] },
             { question: 'Now you are having dinner with your parents. You and your father are talking about today lessons at school, and he asks you: So, to yourself, what is the greatest thing?',
-                 answers: ['Find your own world.', 'To really see the truth of something.', 'Exploring the world is also exploring yourself.'] },
+                 answers: ['A great leader is the prerequisite to desired outcomes.', 'Things which are created with everlasting values.', 'The care and protection that people around you give to each other.'] },
             { question: 'You feel tired after studying. Lying on the bed, you think of every memories in your life, and you realize that after all, you really want to', 
-                answers: ['Feel happy with your life, after all the ups and downs.', 'Be a smart person who has the ability to understand this world.', 'Gain meaningful experience that leads to a meaningful life.'  ] },
+                answers: ['Be with good friends and together achieve accomplishments in life.', 'Experience different ways to see life and decide yours.', 'Be a helpful person.'  ] },
             { question: 'Then, some bad memories arise. From those memories, you think that it is fearful if you are', 
-                answers: ['Punished after doing something bad.', 'Stuck in situations that you do not know anything to get out.', 'A person that no one cares about.'] },
-            { question: 'Good morning. Now you are having breakfast while watching TV. You see a character says that "Everyone should have their own way to assert themselves". A way for you could be?', 
-                answers: ['Learning to do everything right.', 'Reflect your learning and develop a strong base of knowledge.', 'Enrich yourself through various and valuable experiences.'] },
-            { question: 'You are in the class, and today, the teacher asks you: What is a bad habit to yourself that you do quite frequently?', 
-                answers: ['Think of everything in a over-simple way.', 'May just think but never act.', 'Always think of exploring, but rarely consider the worth of it.'] }, 
+                answers: ['Trapped in chaotic scenarios with no voice.', 'Solving a matter with a mediocre mindset.', 'Being exploited by your loved ones.'] },
+            { question: ' Good morning. Now you are having breakfast while watching TV. You see a character says that "Everyone should have their own way to assert themselves". A way for you could be?', 
+                answers: ['Making people aware of your presence and potentials', 'Training your skills and embracing new ones that serve your purpose.', 'Helping others solve problems will also teach you how to solve it.'] },
+            { question: ' You are in the class, and today, the teacher asks you: What is a bad habit to yourself that you do quite frequently?', 
+                answers: ['Unintentionally force people to follow your idea.', 'Want things to be perfect, but based only on your viewpoint.', 'Consider being taken advantage by people is not that serious.'] },  
             { question: 'Then, she asks everyone to write on the board a word about a characteristic that is precious to them. Your choice would be:', 
-                answers: ['Optimism.', 'Curious', 'Adventurous.'] }       
+                answers: ['Responsible.', 'Imaginative.', 'Caring.'] }, 
+
         ],
         gradients: [
             'linear-gradient(180deg, #FF8100 0%, #FDFCFB 50%, #FF8100 100%)',
@@ -139,17 +140,18 @@ document.addEventListener('alpine:init', () => {
 
             let personality;
             if (scoreA > scoreB && scoreA > scoreC) {
-                personality = 'Angel';
+                personality = 'Conqueror';
             } else if (scoreB > scoreA && scoreB > scoreC) {
-                personality = 'Witch';
+                personality = 'Artist';
             } else if (scoreC > scoreA && scoreC > scoreB) {
-                personality = 'Astronaut';
+                personality = 'Elf';
             } else {
                 personality = 'tie';
+                alert('It\'s a tie!');
             }
 
             setTimeout(() => {
-                window.location.href = `./assets/RESULT/Dreamchaser/${personality}.png`;
+                window.location.href = `./assets/RESULT/Constructor/${personality}.png`;
             }, 1500);
         },
         selectAnswer(index) {
