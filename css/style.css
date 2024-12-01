@@ -587,9 +587,9 @@ ul {
         position: absolute;
     }
     img#bg3 {
-        width: 98%;
-        top: 15%;
-        left: 60%
+        width: 95%;
+        top: 12%;
+        left: 52%;
     }
     img#bg4-right,
     img#bg5,
@@ -601,13 +601,13 @@ ul {
         width: 350px;
         height: 60px;
         position: absolute;
-        top: 36%;
-        left: 60%;
+        top: 33%;
+        left: 52%;
     }
     .question_text {
-        width: 50%;
-        font-size: 2vw;
-        margin-top: -22vw;
+        width: 80%;
+        font-size: 2.6vw;
+        margin-top: -31vw;
     }
     .answer-button,
     .answer-buttonnvat {
