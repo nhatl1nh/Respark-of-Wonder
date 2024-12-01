@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 355.5 160.32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: .25px;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="-4834.07" y1="-1312.05" x2="-4515.36" y2="-1312.05" gradientTransform="translate(2709.02 882.19) scale(.56 .61)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#3f3f3f"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="-4717.41" y1="-1176.37" x2="-4398.71" y2="-1176.37" gradientTransform="translate(2749.09 799.25) scale(.56 .61)" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" x1="-4600.76" y1="-1040.69" x2="-4282.05" y2="-1040.69" gradientTransform="translate(2789.15 716.31) scale(.56 .61)" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="DISPLAY">
+    <g>
+      <rect class="cls-3" x="-18.02" y="41.47" width="179.79" height="77.37" rx="35.64" ry="35.64" transform="translate(-35.59 86.64) rotate(-51.57)"/>
+      <rect class="cls-1" x="87.85" y="41.47" width="179.79" height="77.37" rx="35.64" ry="35.64" transform="translate(4.47 169.57) rotate(-51.57)"/>
+      <rect class="cls-2" x="193.73" y="41.47" width="179.79" height="77.37" rx="35.64" ry="35.64" transform="translate(44.54 252.51) rotate(-51.57)"/>
+    </g>
+  </g>
+</svg>
