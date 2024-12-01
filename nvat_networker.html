@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Respark of Wonder</title>
+        <link rel="stylesheet" href="css/style.css">
+        <!--SE0-->
+        <meta name="description" content="Respark of Wonder is a project to see your innerchild">
+        <meta name="keywords" content="Respark of Wonder, innerchild, wonder, project">
+        <meta name="author" content="Mass Media">
+        <!--Favicon-->
+        <link rel="icon" href="assets/ROW logo.svg" type="image/x-icon">
+        <link rel="shortcut icon" href="assets/ROW logo.svg" type="image/x-icon">
+        <!-- Mobile icons -->
+        <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+        <link rel="apple-touch-icon" href="./apple-touch-icon.png">
+        <link rel="manifest" href="./assets/app.manifest">
+        <meta name="theme-color" content="#000">
+
+    </head>
+    <body>
+        <div class="background"></div>
+        <nav class="topnav">
+            <div class="logo">
+                <a href="index.html"><img src="assets/ROW logo.svg" alt="Respark of Wonder"></a>
+            </div>
+        </nav>
+        <div class="testnha-bg" alt="testnha-bg">
+            <img id="bg1" src="assets/Test/BG 1.svg" alt="testnha-bg">
+            <img id="bg2" src="assets/Test/BG 1- rightbottom.svg" alt="testnha-bg">
+            <img id="bg3" src="assets/Test/GIFNVAT/GIF1.gif" alt="GIF Image">
+            <img id="bg4-left" src="assets/Test/gamebutton.svg" alt="testnha-bg">
+            <img id="bg4-right" src="assets/Test/gamebutton.svg" alt="testnha-bg">
+            <img id="bg5" src="assets/Test/RSOW sticker.svg" alt="testnha-bg">
+            <img id="bg6" src="assets/Test/DAIZI sticker.svg" alt="testnha-bg">
+            <img id="bg7" src="assets/Test/BG 2.svg" alt="testnha-bg">
+            <div id="questionbg"></div>
+            <img id="bg8" src="assets/Test/blipping.svg" alt="testnha-bg">
+        </div>
+        <div x-data="quizApp">
+            <div class="question" x-show="currentQuestion < questions.length">
+                <h2 class="question_text" x-text="questions[currentQuestion].question"></h2>
+                <ul>
+                    <template x-for="(answer, index) in questions[currentQuestion].answers" :key="index">
+                        <li>
+                            <button @click="selectAnswer(index)" x-text="answer" class="answer-buttonnvat"></button>
+                                    </li>
+                                    </template>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<script>
+    setTimeout(function() {
+        if (Alpine.store('quizApp').currentQuestion >= Alpine.store('quizApp').questions.length) {
+            window.location.href = `./assets/RESULT/Networker/N${personality}`;
+        }
+    }, 100000); // Increased timeout to 100000ms (100 seconds)
+
+
+document.addEventListener('alpine:init', () => {
+    Alpine.data('quizApp', () => ({
+        currentQuestion: 0,
+        score: 0,
+        selectedAnswers: [],
+        questions: [
+            { question: 'You are in a class with your friends, and it is quite sleepy. Then, your teacher suddenly ask you: Can you tell me what you believe?',
+                 answers: ['You only live once, so do not hesitate if you want it', 'Everyone in this world are equal comes up with ideas to ace the challenge that shocks them', 'Nobody can be like you.', ] },
+            { question: 'Now you are having dinner with your parents. You and your father are talking about today lessons at school, and he asks you: So, to yourself, what is the greatest thing?',
+                 answers: ['Be able to live your life to the fullest.', 'Always connect with great people.', 'Enjoy intimate times with your loved ones'] },
+            { question: 'You feel tired after studying. Lying on the bed, you think of every memories in your life, and you realize that after all, you really want to', 
+                answers: ['Trapped by boredom and feel no enthusism to live.', 'Invisble or too visible in a crowd.', 'A person that no one cares about.'  ] },
+            { question: 'Good morning. Now you are having breakfast while watching TV. You see a character says that "Everyone should have their own way to assert themselves". A way for you could be?', 
+                answers: ['Letting people know how fun it is to be with you', 'Being a down-to-earth master that can see through things in seconds.', 'Being emotionally and physically attractive.'] },
+            { question: 'You are in the class, and today, the teacher asks you: What is a bad habit to yourself that you do quite frequently?', 
+                answers: ['Wasting time doing nothing', 'Try to be someone else to blend in rather than being you', ' Be a people pleaser.'] },
+            { question: 'Then, she asks everyone to write on the board a word about a characteristic that is precious to them. Your choice would be:', 
+                answers: ['Energetic.', 'Empathetic.', 'Grateful.'] }    
+        ],
+        gradients: [
+            'linear-gradient(180deg, #FF8100 0%, #FDFCFB 50%, #FF8100 100%)',
+            'linear-gradient(180deg, #FF1380 0%, #FDFCFB 50%, #FF1380 100%)',
+            'linear-gradient(180deg, #0095BD 0%, #FDFCFB 50%, #0095BD 100%)',
+            'linear-gradient(180deg, #F20071 0%, #FDFCFB 50%, #F20071 100%)',
+            'linear-gradient(180deg, #00D18B 0%, #FDFCFB 50%, #00D18B 100%)',
+            'linear-gradient(180deg, #F20071 0%, #FDFCFB 50%, #F20071 100%)',
+        ],
+        gradientsb : [
+        'linear-gradient(180deg, #FDFCFB 50%, #FF8100 100%)',
+            'linear-gradient(180deg,  #FDFCFB 50%, #FF1380 100%)',
+            'linear-gradient(180deg,  #FDFCFB 50%, #0095BD 100%)',
+            'linear-gradient(180deg,  #FDFCFB 50%, #F20071 100%)',
+            'linear-gradient(180deg,  #FDFCFB 50%, #00D18B 100%)',
+            'linear-gradient(180deg, #FDFCFB 50%, #F20071 100%)',
+        ],
+        init() {
+            this.selectedAnswers = Array(this.questions.length).fill(null);
+            const answerButtons = document.querySelectorAll('.answer-buttonnvat');
+            answerButtons.forEach(button => {
+                button.style.background = this.gradientsb[this.currentQuestion];
+            });
+            const bodyElement = document.body;
+            if (bodyElement) {
+                bodyElement.style.background = this.gradients[this.currentQuestion];
+            } else {
+                console.error('Body element not found');
+            }
+
+            // Initialize background color of .background div with animation
+            const backgroundDiv = document.querySelector('.background');
+            if (backgroundDiv) {
+                backgroundDiv.style.background = this.gradients[this.currentQuestion];
+                backgroundDiv.style.animation = 'backgroundAnimation 10s infinite';
+            } else {
+                console.error('Element with class "background" not found');
+            }
+        },
+        calculateResult() {
+            let scoreA = 0;
+            let scoreB = 0;
+            let scoreC = 0;
+            this.questions.forEach((question, index) => {
+                const selectedAnswer = this.selectedAnswers[index];
+                if (selectedAnswer === 0) {
+                    scoreA += index < 4 ? 2 : 1;
+                } else if (selectedAnswer === 1) {
+                    scoreB += index < 4 ? 2 : 1;
+                } else if (selectedAnswer === 2) {
+                    scoreC += index < 4 ? 2 : 1;
+                }
+            });
+
+            let personality;
+            if (scoreA > scoreB && scoreA > scoreC) {
+                personality = 'A';
+                alert('Result A');
+            } else if (scoreB > scoreA && scoreB > scoreC) {
+                personality = 'B';
+                alert('Result B');
+            } else if (scoreC > scoreA && scoreC > scoreB) {
+                personality = 'C';
+                alert('Result C');
+            } else {
+                personality = 'tie';
+                alert('It\'s a tie!');
+            }
+
+            setTimeout(() => {
+                window.location.href = `./assets/RESULT/Networker/N${personality}.jpg`;
+            }, 1500);
+        },
+        selectAnswer(index) {
+            this.selectedAnswers[this.currentQuestion] = index;
+            this.currentQuestion++;
+            if (this.currentQuestion >= this.questions.length) {
+                this.calculateResult();
+            } else {
+                const bg3Element = document.getElementById('bg3');
+                if (bg3Element) {
+                    const answerButtons = document.querySelectorAll('.answer-buttonnvat');
+                    const hoverColors = ['#FF8100', '#FF1380', '#0095BD', '#F20071', '#00D18B', '#00D18B', '#F20071'];
+                    answerButtons.forEach(button => {
+                        button.style.background = this.gradientsb[this.currentQuestion];
+                        button.addEventListener('mouseover', () => {
+                            button.style.background = hoverColors[this.currentQuestion];
+                        });
+                        button.addEventListener('mouseout', () => {
+                            button.style.background = this.gradientsb[this.currentQuestion];
+                        });
+                    });
+                    bg3Element.src = `assets/Test/GIFNVAT/GIF${this.currentQuestion + 1}.gif`;
+                    bg3Element.onload = function() {
+                        console.log('Image loaded successfully');
+                    };
+                    bg3Element.onerror = function() {
+                        console.error('Error loading image');
+                    };
+                } else {
+                    console.error('Element with id "bg3" not found');
+                }
+
+                // Change background color with linear-gradient and animation
+                const bodyElement = document.body;
+                if (bodyElement) {
+                    bodyElement.style.background = this.gradients[this.currentQuestion];
+                    bodyElement.style.animation = 'backgroundAnimation 10s infinite';
+                } else {
+                    console.error('Body element not found');
+                }
+
+                // Change background color of .background div with animation
+                const backgroundDiv = document.querySelector('.background');
+                if (backgroundDiv) {
+                    backgroundDiv.style.background = this.gradients[this.currentQuestion];
+                    backgroundDiv.style.animation = 'backgroundAnimation 10s infinite';
+                } else {
+                    console.error('Element with class "background" not found');
+                }
+            }
+        }
+    }));
+});
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
