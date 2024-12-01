@@ -578,6 +578,9 @@ ul {
     transform: scale(1.05);
 }
 @media (max-width: 480px) {
+    .logo {
+        display:none;
+    }
     img#bg1 {
         height: 150vh;
         width: 180vw;
@@ -589,7 +592,7 @@ ul {
     }
     img#bg3 {
         width: 90%;
-        top: 13%;
+        top: 5%;
         left: 50%;
     }
     img#bg4-right,
@@ -601,7 +604,7 @@ ul {
     img#bg8 {
         width: 80%;
         height: 100px;
-        top: 41%;
+        top: 32%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
@@ -609,13 +612,13 @@ ul {
         width: 350px;
         height: 60px;
         position: absolute;
-        top: 37%;
-        left: 49%;
+        top: 28%;
+        left: 50%;
     }
     .question_text {
         width: 80%;
         font-size: 2.6vw;
-        margin-top: -18vw;
+        margin-top: -35vw;
     }
     .answer-button,
     .answer-buttonnvat {
