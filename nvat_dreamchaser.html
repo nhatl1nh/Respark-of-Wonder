@@ -58,7 +58,7 @@
 <script>
     setTimeout(function() {
         if (Alpine.store('quizApp').currentQuestion >= Alpine.store('quizApp').questions.length) {
-            window.location.href = `./assets/RESULT/Networker/N${personality}`;
+            window.location.href = `./assets/RESULT/Dreamchaser/${personality}.png`;
         }
     }, 100000); // Increased timeout to 100000ms (100 seconds)
 
@@ -70,17 +70,19 @@ document.addEventListener('alpine:init', () => {
         selectedAnswers: [],
         questions: [
             { question: 'You are in a class with your friends, and it is quite sleepy. Then, your teacher suddenly ask you: Can you tell me what you believe?',
-                 answers: ['You only live once, so do not hesitate if you want it', 'Everyone in this world are equal comes up with ideas to ace the challenge that shocks them', 'Nobody can be like you.', ] },
+                 answers: ['Nothing is more important than you being you.', 'Knowing something is great, but knowing its true nature is even better.', 'Potentials should never be locked in.', ] },
             { question: 'Now you are having dinner with your parents. You and your father are talking about today lessons at school, and he asks you: So, to yourself, what is the greatest thing?',
-                 answers: ['Be able to live your life to the fullest.', 'Always connect with great people.', 'Enjoy intimate times with your loved ones'] },
+                 answers: ['Find your own world.', 'To really see the truth of something.', 'Exploring the world is also exploring yourself.'] },
             { question: 'You feel tired after studying. Lying on the bed, you think of every memories in your life, and you realize that after all, you really want to', 
-                answers: ['Trapped by boredom and feel no enthusism to live.', 'Invisble or too visible in a crowd.', 'A person that no one cares about.'  ] },
+                answers: ['Feel happy with your life, after all the ups and downs.', 'Be a smart person who has the ability to understand this world.', 'Gain meaningful experience that leads to a meaningful life.'  ] },
+            { question: 'Then, some bad memories arise. From those memories, you think that it is fearful if you are', 
+                answers: ['Punished after doing something bad.', 'Stuck in situations that you do not know anything to get out.', 'A person that no one cares about.'] },
             { question: 'Good morning. Now you are having breakfast while watching TV. You see a character says that "Everyone should have their own way to assert themselves". A way for you could be?', 
-                answers: ['Letting people know how fun it is to be with you', 'Being a down-to-earth master that can see through things in seconds.', 'Being emotionally and physically attractive.'] },
+                answers: ['Learning to do everything right.', 'Reflect your learning and develop a strong base of knowledge.', 'Enrich yourself through various and valuable experiences.'] },
             { question: 'You are in the class, and today, the teacher asks you: What is a bad habit to yourself that you do quite frequently?', 
-                answers: ['Wasting time doing nothing', 'Try to be someone else to blend in rather than being you', ' Be a people pleaser.'] },
+                answers: ['Think of everything in a over-simple way.', 'May just think but never act.', 'Always think of exploring, but rarely consider the worth of it.'] }, 
             { question: 'Then, she asks everyone to write on the board a word about a characteristic that is precious to them. Your choice would be:', 
-                answers: ['Energetic.', 'Empathetic.', 'Grateful.'] }    
+                answers: ['Optimism.', 'Curious', 'Adventurous.'] }       
         ],
         gradients: [
             'linear-gradient(180deg, #FF8100 0%, #FDFCFB 50%, #FF8100 100%)',
@@ -137,21 +139,17 @@ document.addEventListener('alpine:init', () => {
 
             let personality;
             if (scoreA > scoreB && scoreA > scoreC) {
-                personality = 'A';
-                alert('Result A');
+                personality = 'Angel';
             } else if (scoreB > scoreA && scoreB > scoreC) {
-                personality = 'B';
-                alert('Result B');
+                personality = 'Witch';
             } else if (scoreC > scoreA && scoreC > scoreB) {
-                personality = 'C';
-                alert('Result C');
+                personality = 'Astronaut';
             } else {
                 personality = 'tie';
-                alert('It\'s a tie!');
             }
 
             setTimeout(() => {
-                window.location.href = `./assets/RESULT/Networker/N${personality}.jpg`;
+                window.location.href = `./assets/RESULT/Dreamchaser/${personality}.png`;
             }, 1500);
         },
         selectAnswer(index) {
