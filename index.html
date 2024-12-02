@@ -36,8 +36,9 @@
 <div ><img class="homepagebg" src="assets/Homepage/BANNER.gif"></div>
 <div class="table"></div>
 <div class="redirect-button">
-    <button id="redirect-button" onclick="window.location.href='test_nha.html'">Seek for your innerchild</button>
+    <button id="redirect-button" onclick="window.location.href='test_nha.html'">Play !</button>
 </div>
+<h3>Play around here !</h3>
 <div class="containerindex">
     <div class="gifbg">
         <img id="gifgmaychoigame" src="assets/Homepage/[GIF] Hover Background/GAME.gif">
@@ -69,43 +70,53 @@
 
 </div>
 <script>
-    document.getElementById('maychoigamecomau').addEventListener('click', function() {
-        this.style.display = 'none';
-        document.getElementById('gifgmaychoigame').style.display = 'block';
-    });
+document.getElementById('maychoigamecomau').addEventListener('click', function() {
+    this.style.display = 'none';
+    document.getElementById('maychoigamekhongmau').style.display = 'block';
+    document.getElementById('gifgmaychoigame').style.display = 'block';
+});
 document.getElementById('maychoigamekhongmau').addEventListener('click', function() {
+    this.style.display = 'none';
     document.getElementById('maychoigamecomau').style.display = 'block';
     document.getElementById('gifgmaychoigame').style.display = 'none';
 });
 document.getElementById('nhatkicomau').addEventListener('click', function() {
     this.style.display = 'none';
+    document.getElementById('nhatkikhongmau').style.display = 'block';
     document.getElementById('gifnhatki').style.display = 'block';
 });
 document.getElementById('nhatkikhongmau').addEventListener('click', function() {
+    this.style.display = 'none';
     document.getElementById('nhatkicomau').style.display = 'block';
     document.getElementById('gifnhatki').style.display = 'none';
 });
 document.getElementById('taptomaucomau').addEventListener('click', function() {
     this.style.display = 'none';
+    document.getElementById('taptomaukhongmau').style.display = 'block';
     document.getElementById('giftaptomau').style.display = 'block';
 });
 document.getElementById('taptomaukhongmau').addEventListener('click', function() {
+    this.style.display = 'none';
     document.getElementById('taptomaucomau').style.display = 'block';
     document.getElementById('giftaptomau').style.display = 'none';
 });
 document.getElementById('vosocomau').addEventListener('click', function() {
     this.style.display = 'none';
+    document.getElementById('vosokhongmau').style.display = 'block';
     document.getElementById('gifvoso').style.display = 'block';
 });
 document.getElementById('vosokhongmau').addEventListener('click', function() {
+    this.style.display = 'none';
     document.getElementById('vosocomau').style.display = 'block';
     document.getElementById('gifvoso').style.display = 'none';
 });
 document.getElementById('xephinhcomau').addEventListener('click', function() {
     this.style.display = 'none';
+    document.getElementById('xephinhkhongmau').style.display = 'block';
     document.getElementById('gifxephinh').style.display = 'block';
 });
 document.getElementById('xephinhkhongmau').addEventListener('click', function() {
+    this.style.display = 'none';
     document.getElementById('xephinhcomau').style.display = 'block';
     document.getElementById('gifxephinh').style.display = 'none';
 });
