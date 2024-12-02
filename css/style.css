@@ -63,13 +63,15 @@ body {
     left: 10%;
 }
 .logoresult {
-    width: 15rem;
-    height:15rem;
+    width: 15%;
     display: block;
     margin: auto;
     position: absolute;
     top: 5vh;
     left: 10vh;
+}
+img#ROWsticker {
+    width: 100%;
 }
 #loading-screen {
     position: fixed;
@@ -153,7 +155,7 @@ img#loadinggif {
 }
 
 p.text {
-    font-family: 'Ganh Type - Regular';
+    font-family: 'DFVN Pexel Grotesk';
     font-size: 1.2vw;
     color: black;
     text-align: center;
@@ -164,6 +166,7 @@ p.text {
 
 }
 .btnpioneer {
+
     border-radius: 35px;
     border: 2px solid white;
     background: none;
@@ -177,7 +180,7 @@ p.text {
     left: 50%;
     top: 85%;
     transform: translate(-50%, -50%);
-    font-family: 'SF Pixelate Oblique' ;
+    font-family: 'DFVN Pexel Grotesk';
     box-shadow: 0 10px 8px rgba(255, 255, 255, 0.501);
 }
 .btnpioneer:hover {
@@ -197,7 +200,7 @@ p.text {
     left: 50%;
     top: 90%;
     transform: translate(-50%, -50%);
-    font-family: 'SF Pixelate Oblique' ;
+    font-family: 'DFVN Pexel Grotesk';
     box-shadow: 0 10px 8px rgba(255, 255, 255, 0.501);
 }
 .btnconstructor:hover {
@@ -217,7 +220,7 @@ p.text {
     left: 50%;
     top: 85%;
     transform: translate(-50%, -50%);
-    font-family: 'SF Pixelate Oblique' ;
+    font-family: 'DFVN Pexel Grotesk';
     box-shadow: 0 10px 8px rgba(255, 255, 255, 0.501);
 }
 .btndreamchaser:hover {
@@ -238,7 +241,7 @@ p.text {
     left: 50%;
     top: 85%;
     transform: translate(-50%, -50%);
-    font-family: 'SF Pixelate Oblique' ;
+    font-family: 'DFVN Pexel Grotesk';
     box-shadow: 0 10px 8px rgba(255, 255, 255, 0.501);
 }
 .btnnetworker:hover {
@@ -280,6 +283,9 @@ video {
         margin-right: auto;
         display: block; 
     }
+    img#ROWsticker {
+        width: 100%;
+    }
     .btn, .btnpioneer, .btndreamchaser, .btnnetworker {
         font-size: 5vw;
         padding: 8px 40px;
@@ -314,6 +320,9 @@ video {
     }
     }
 @media (max-width: 390px) {
+    img#ROWsticker {
+        width: 100%;
+    }
     .backgroundconstructor, .backgroundnetworker, .backgrounddreamchaser, .backgroundpioneer,.background {
         height: 100dvh;
     }
@@ -659,6 +668,9 @@ ul {
     top: 12%;
     left: 7%;
     }
+    img#ROWsticker {
+        width: 100%;
+    }
     img#bg1 {
         height: 80%;
         transform: translate(-50%, -50%) ;
@@ -730,7 +742,9 @@ ul {
     }
 }
 @media (max-width: 390px) {
-    
+    img#ROWsticker {
+        width: 100%;
+    }
     img#bg1 {
         height: 150vh;
         width: 190vw;
@@ -812,16 +826,30 @@ img.homepagebg {
 .table {
     position: absolute;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
     width: 100%;
     height: 20%;
-    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 20px;
     text-align: center;
-    background-color:var(--color-green-witch);
+    background: linear-gradient(90deg, #5DDA00 0%, #ffffff 50%, #5DDA00 100%);
+    animation: tableMove 5s infinite;
+    border: 1px solid #000;
 }
+h3 {
+    font-family: 'DFVN Pexel Grotesk';
+    font-size: 1vw;
+    color: black;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
 .gifbg {
     
 }
@@ -834,6 +862,8 @@ img#gifgmaychoigame,img#gifnhatki,img#giftaptomau
     transform: translate(-50%, -50%);
     width: 40%;
     border-radius: 15px;
+    border: 1px solid #000;
+
 
 }
 .containerindex {
@@ -861,7 +891,9 @@ img#gifgmaychoigame,img#gifnhatki,img#giftaptomau
     transform: translate(-50%, -50%);
     text-align: center;
     text-transform: uppercase;
-    color: #ffffff;
+    color: #000000;
+    border: 1px solid #000;
+
 }
 
 
@@ -879,6 +911,7 @@ img#gifgmaychoigame,img#gifnhatki,img#giftaptomau
     z-index: 10;
 }
 #maychoigamekhongmau{
+    display: none;
     position: absolute;
     top: 75%;
     left: 50%;
@@ -901,6 +934,7 @@ img#gifgmaychoigame,img#gifnhatki,img#giftaptomau
 }
 
 #nhatkikhongmau {
+    display: none;
     position: absolute;
     top: 75%;
     left: 70%;
@@ -912,15 +946,16 @@ img#gifgmaychoigame,img#gifnhatki,img#giftaptomau
 #taptomaucomau {
     position: absolute;
     top: 75%;
-    right: 70%;
+    right: 69.5%;
     transform: translate(-50%, -50%) scale(0.8);
-    width: 16%;
+    width: 17%;
     animation: float 3s ease-in-out infinite;
     z-index: 10;
 
 
 }
 #taptomaukhongmau {
+    display: none;
     position: absolute;
     top: 75%;
     right: 70%;
@@ -947,7 +982,7 @@ img#gifgmaychoigame,img#gifnhatki,img#giftaptomau
     transform: translate(-50%, -50%) scale(0.8);
     width: 15%;
     animation: float 3s ease-in-out infinite;
-
+    display: none;
 }
 #xephinhcomau {
     position: absolute;
@@ -967,7 +1002,7 @@ img#gifgmaychoigame,img#gifnhatki,img#giftaptomau
     transform: translate(-50%, -50%) scale(0.8);
     width: 15%;
     animation: float 3s ease-in-out infinite;
-
+    display: none;
 }
 @keyframes float {
     0% {
@@ -985,6 +1020,9 @@ img#gifgmaychoigame,img#gifnhatki,img#giftaptomau
     animation: float 3s ease-in-out infinite;
 }
 @media (max-width: 768px) {
+    img#ROWsticker {
+        width: 100%;
+    }
     .table {
         width: 100%;
         height: 35%;
@@ -1036,9 +1074,18 @@ img#gifgmaychoigame,img#gifnhatki,img#giftaptomau
         left:80%;
         top: 110%;
     }
+    h3 {
+        font-size: 3vw;
+    }
 }
 
 @media (max-width: 480px) {
+    img#ROWsticker {
+        width: 100%;
+    }
+    h3 {
+        font-size: 2vw;
+    }
     .table {
         width: 100%;
         height: 35%;
