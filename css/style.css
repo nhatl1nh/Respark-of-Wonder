@@ -1,8 +1,8 @@
 @font-face {
     font-family: 'DFVN Pexel Grotesk';
-    src: url('../font/DFVN Pexel Grotesk.woff') format('woff');
-    src: url('../font/DFVN Pexel Grotesk.otf') format('opentype');
-    src: url('../font/DFVN Pexel Grotesk.ttf') format('truetype');
+    src: url('../assets/fonts/DFVN\ Pexel\ Grotesk.woff') format('woff');
+    src: url('../assets/fonts/DFVN\ Pexel\ Grotesk.otf') format('opentype');
+    src: url('../assets/fonts/DFVN\ Pexel\ Grotesk.ttf') format('truetype');
 }
 @font-face {
     font-family: 'Ganh Type - Regular';
