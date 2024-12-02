@@ -59,8 +59,8 @@ body {
     display: block;
     margin: auto;
     position: absolute;
-    top: 2rem;
-    left: 6rem;
+    top: 5%;
+    left: 10%;
 }
 .logoresult {
     width: 15rem;
@@ -406,7 +406,7 @@ img#bg4-left {
     position: absolute;
     width: 15%;
     bottom: 7vh;
-    left: 15vh;
+    left: 10%;
     transform: translate(0, 0);
     z-index: -9;
 }
@@ -414,7 +414,7 @@ img#bg4-right {
     position: absolute;
     width: 15%;
     bottom: 7vh;
-    right: 15vh;
+    right: 10%;
     transform: translate(0, 0);
     z-index: -9;
 }
@@ -776,5 +776,298 @@ ul {
         left: 4vh;
         transform: translate(0, 0);
         z-index: -9;
+    }
+}
+/*************HOMEPAGE**************/
+img.homepagebg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+.table {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 20%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    background-color:var(--color-green-witch);
+}
+.gifbg {
+    
+}
+img#gifgmaychoigame,img#gifnhatki,img#giftaptomau
+,img#gifvoso,img#gifxephinh{
+    display: none;
+    position: absolute;
+    top: -70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    border-radius: 15px;
+
+}
+.container {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 30%;
+    z-index: 1; /* Ensure it is above the .table */
+}
+#redirect-button {
+    font-family: 'DFVN Pexel Grotesk';
+    font-size: 2vw;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    background:linear-gradient(180deg, #00D18B 0%, #ceeefd 50%, #00D18B 100%);
+    border-radius: 25px;
+    padding: 15px 60px;
+    cursor: pointer;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+
+#redirect-button:hover {
+    background-color: var(--color-blue-conqueror);
+    transition: background 0.5s ease, transform 0.3s ease;
+    transform: translate(-50%, -50%) scale(1.05);
+}
+#maychoigamecomau {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    width: 16%;
+    z-index: 10;
+}
+#maychoigamekhongmau{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    width: 15%;
+    animation: float 3s ease-in-out infinite;
+
+
+}
+#nhatkicomau {
+    position: absolute;
+    top: 75%;
+    left: 70%;
+    transform: translate(-50%, -50%) scale(0.8);
+    width: 16%;
+    animation: float 3s ease-in-out infinite;
+    z-index: 10;
+
+
+}
+
+#nhatkikhongmau {
+    position: absolute;
+    top: 75%;
+    left: 70%;
+    transform: translate(-50%, -50%) scale(0.8);
+    width: 15%;
+    animation: float 3s ease-in-out infinite;
+
+}
+#taptomaucomau {
+    position: absolute;
+    top: 75%;
+    right: 70%;
+    transform: translate(-50%, -50%) scale(0.8);
+    width: 16%;
+    animation: float 3s ease-in-out infinite;
+    z-index: 10;
+
+
+}
+#taptomaukhongmau {
+    position: absolute;
+    top: 75%;
+    right: 70%;
+    transform: translate(-50%, -50%) scale(0.8);
+    width: 15%;
+    animation: float 3s ease-in-out infinite;
+
+}
+#vosocomau {
+    position: absolute;
+    top: 75%;
+    left: 35%;
+    transform: translate(-50%, -50%) scale(0.8);
+    width: 16%;
+    animation: float 3s ease-in-out infinite;
+    z-index: 10;
+
+
+}
+#vosokhongmau {
+    position: absolute;
+    top: 75%;
+    left: 35%;
+    transform: translate(-50%, -50%) scale(0.8);
+    width: 15%;
+    animation: float 3s ease-in-out infinite;
+
+}
+#xephinhcomau {
+    position: absolute;
+    top: 75%;
+    left: 90%;
+    transform: translate(-50%, -50%) scale(0.8);
+    width: 16%;
+    animation: float 3s ease-in-out infinite;
+    z-index: 10;
+
+
+}
+#xephinhkhongmau {
+    position: absolute;
+    top: 75%;
+    left: 90%;
+    transform: translate(-50%, -50%) scale(0.8);
+    width: 15%;
+    animation: float 3s ease-in-out infinite;
+
+}
+@keyframes float {
+    0% {
+        transform: translate(-50%, -50%) scale(0.8) translateY(-5px);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(0.8) translateY(-15px);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(0.8) translateY(-5px);
+    }
+}
+
+#maychoigamecomau {
+    animation: float 3s ease-in-out infinite;
+}
+@media (max-width: 768px) {
+    .table {
+        width: 100%;
+        height: 35%;
+    }
+    #redirect-button {
+        font-size: 5vw;
+        padding: 8px 30px;
+        top: 40%;
+    }
+    img#gifgmaychoigame,img#gifnhatki,img#giftaptomau
+,img#gifvoso,img#gifxephinh{
+    display: none;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    border-radius: 15px;
+
+}
+    #maychoigamecomau, #maychoigamekhongmau,
+    #nhatkicomau, #nhatkikhongmau,
+    #taptomaucomau, #taptomaukhongmau,
+    #vosocomau, #vosokhongmau,
+    #xephinhcomau, #xephinhkhongmau {
+        width: 25%;
+        transform: translate(-10%, -10%);
+        margin: 10% 0;
+    }
+    #maychoigamecomau, #maychoigamekhongmau {
+        left:50%;        
+        top: 35%;
+
+    }
+    #nhatkicomau, #nhatkikhongmau {
+        left:20%;
+        top: 45%;
+
+    }
+    #taptomaucomau, #taptomaukhongmau {
+        left:85%;
+        top: 45%;
+    }
+    #vosocomau, #vosokhongmau {
+        left:30%;
+        top: 110%;
+    }
+    #xephinhcomau, #xephinhkhongmau {
+        left:80%;
+        top: 110%;
+    }
+}
+
+@media (max-width: 480px) {
+    .table {
+        width: 100%;
+        height: 35%;
+    }
+    #redirect-button {
+        font-size: 5vw;
+        padding: 8px 30px;
+        top: 40%;
+    }
+    img#gifgmaychoigame,img#gifnhatki,img#giftaptomau
+,img#gifvoso,img#gifxephinh{
+    display: none;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    border-radius: 15px;
+
+}
+    #maychoigamecomau, #maychoigamekhongmau,
+    #nhatkicomau, #nhatkikhongmau,
+    #taptomaucomau, #taptomaukhongmau,
+    #vosocomau, #vosokhongmau,
+    #xephinhcomau, #xephinhkhongmau {
+        width: 40%;
+        transform: translate(-10%, -10%);
+        margin: 10% 0;
+    }
+    #maychoigamecomau, #maychoigamekhongmau {
+        left:50%;        
+        top: 35%;
+
+    }
+    #nhatkicomau, #nhatkikhongmau {
+        left:20%;
+        top: 45%;
+
+    }
+    #taptomaucomau, #taptomaukhongmau {
+        left:85%;
+        top: 45%;
+    }
+    #vosocomau, #vosokhongmau {
+        left:30%;
+        top: 110%;
+    }
+    #xephinhcomau, #xephinhkhongmau {
+        left:80%;
+        top: 110%;
     }
 }
