@@ -21,6 +21,14 @@
 
     </head>
     <body>
+        <div id=loading-screen  >
+            <img id="loadinggif"src="assets/loading.gif" alt="Loading" />
+        </div>
+        <script>
+            window.addEventListener('load', function() {
+                document.getElementById('loading-screen').style.display = 'none';
+            });
+        </script>
         <div class="background"></div>
         <nav class="topnav">
             <div class="logo">
@@ -56,13 +64,6 @@
             </div>
         </div>
 <script>
-    setTimeout(function() {
-        if (Alpine.store('quizApp').currentQuestion >= Alpine.store('quizApp').questions.length) {
-            window.location.href = `./assets/RESULT/Constructor/${personality}.png`;
-        }
-    }, 100000); // Increased timeout to 100000ms (100 seconds)
-
-
 document.addEventListener('alpine:init', () => {
     Alpine.data('quizApp', () => ({
         currentQuestion: 0,
@@ -150,6 +151,9 @@ document.addEventListener('alpine:init', () => {
                 alert('It\'s a tie!');
             }
 
+            // Show loading screen
+            document.getElementById('loading-screen').style.display = 'block';
+
             setTimeout(() => {
                 window.location.href = `./assets/RESULT/Constructor/${personality}.png`;
             }, 1500);
@@ -205,5 +209,7 @@ document.addEventListener('alpine:init', () => {
         }
     }));
 });
+
+
 </script>
 <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
