@@ -21,6 +21,14 @@
 
     </head>
     <body>
+        <div id=loading-screen  >
+            <img id="loadinggif"src="assets/loading.gif" alt="Loading" />
+        </div>
+        <script>
+            window.addEventListener('load', function() {
+                document.getElementById('loading-screen').style.display = 'none';
+            });
+        </script>
         <div class="background"></div>
         <nav class="topnav">
             <div class="logo">
@@ -44,7 +52,7 @@
             <img id="bg3" src="assets/Test/GIF/GIF1.gif" alt="GIF Image">
             <img id="bg4-left" src="assets/Test/gamebutton.svg" alt="testnha-bg">
             <img id="bg4-right" src="assets/Test/gamebutton.svg" alt="testnha-bg">
-            <img id="bg5" src="assets/Test/RSOW sticker.svg" alt="testnha-bg">
+            <img id="bg5" src="assets/Test/RSOW sticker.png" alt="testnha-bg">
             <img id="bg6" src="assets/Test/DAIZI sticker.svg" alt="testnha-bg">
             <img id="bg7" src="assets/Test/BG 2.svg" alt="testnha-bg">
             <div id="questionbg"></div>
@@ -99,11 +107,11 @@ document.addEventListener('alpine:init', () => {
             'linear-gradient(180deg, #00D241 0%, #FDFCFB 50%, #00D241 100%)'
         ],
         gradientsbutton: [
-            'linear-gradient(to bottom, #5DDE00 , #FDFCFB , #5DDE00 )',
-            'linear-gradient(to bottom, #FFBB00 , #FDFCFB , #FFBB00 )',
-            'linear-gradient(to bottom, #0095BD , #FDFCFB , #0095BD )',
-            'linear-gradient(to bottom, #F990DF , #FDFCFB , #F990DF )',
-            'linear-gradient(to bottom, #00D241 , #FDFCFB , #00D241 )'
+            'linear-gradient(to bottom , #FDFCFB , #5DDE00 )',
+            'linear-gradient(to bottom , #FDFCFB , #FFBB00 )',
+            'linear-gradient(to bottom, #FDFCFB , #0095BD )',
+            'linear-gradient(to bottom, #FDFCFB , #F990DF )',
+            'linear-gradient(to bottom, #FDFCFB , #00D241 )'
         ],
         selectAnswer(index) {
             if (this.currentQuestion < 2) {
@@ -131,7 +139,7 @@ document.addEventListener('alpine:init', () => {
                         resultPage = 'nha_dreamchaser.html';
                         break;
                 }
-                alert(`Your result is: ${result}`);
+                
                 window.location.href = resultPage;
             } else {
                 const bg3Element = document.getElementById('bg3');
