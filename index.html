@@ -20,6 +20,89 @@
         <meta name="theme-color" content="#000">
 </head>
 <body>
-    <button onclick="location.href='test_nha.html'">Go to Test NHA</button>
+    <nav class="topnav">
+        <div class="logoresult">
+            <a href="index.html"><img src="assets/Test/RSOW sticker.svg"></a>
+        </div>
+    </nav>
+<div ><img class="homepagebg" src="assets/Homepage/BANNER.gif"></div>
+<div class="table"></div>
+<div class="redirect-button">
+    <button id="redirect-button" onclick="window.location.href='test_nha.html'">Seek for your innerchild</button>
+</div>
+<div class="container">
+    <div class="gifbg">
+        <img id="gifgmaychoigame" src="assets/Homepage/[GIF] Hover Background/GAME.gif">
+        <img id="gifnhatki" src="assets/Homepage/[GIF] Hover Background/NHẬT KÝ.gif">
+        <img id="giftaptomau" src="assets/Homepage/[GIF] Hover Background/TRANH VẼ.gif">
+        <img id="gifvoso" src="assets/Homepage/[GIF] Hover Background/ỐC.gif">
+        <img id="gifxephinh" src="assets/Homepage/[GIF] Hover Background/MẢNH GHÉP.gif">
+
+    <div class="maychoigame" >
+        <img id="maychoigamecomau" src="assets/Homepage/[HOVER] CÓ MÀU/[CÓ MÀU] Máy chơi game.png">
+        <img id="maychoigamekhongmau"  src="assets/Homepage/[HOVER] KHÔNG MÀU/[K MÁU] Máy chơi game.png">
+    </div>
+    <div class="nhatki" >
+        <img id="nhatkicomau" src="assets/Homepage/[HOVER] CÓ MÀU/[CÓ MÀU] Nhật kí.png">
+        <img id="nhatkikhongmau" src="assets/Homepage/[HOVER] KHÔNG MÀU/[K MÀU] Nhật kí.png">
+    </div>
+    <div class="taptomau" >
+        <img id="taptomaucomau" src="assets/Homepage/[HOVER] CÓ MÀU/[CÓ MÀU] Tập tô màu.png">
+        <img id="taptomaukhongmau" src="assets/Homepage/[HOVER] KHÔNG MÀU/[K MÀU] Tệp vẽ.png">
+    </div>
+    <div class="voso" >
+            <img id="vosocomau" src="assets/Homepage/[HOVER] CÓ MÀU/[CÓ MÀU] Vỏ màu.png">
+            <img id="vosokhongmau" src="assets/Homepage/[HOVER] KHÔNG MÀU/[K MÀU] Vỏ sò.png">
+    </div>
+    <div class="xephinh" >
+            <img id="xephinhcomau" src="assets/Homepage/[HOVER] CÓ MÀU/[CÓ MÀU] Xếp hình_.png">
+            <img id="xephinhkhongmau" src="assets/Homepage/[HOVER] KHÔNG MÀU/[K MÀU] Ghép hình.png">
+    </div>
+
+</div>
+<script>
+    document.getElementById('maychoigamecomau').addEventListener('click', function() {
+        this.style.display = 'none';
+        document.getElementById('gifgmaychoigame').style.display = 'block';
+    });
+document.getElementById('maychoigamekhongmau').addEventListener('click', function() {
+    document.getElementById('maychoigamecomau').style.display = 'block';
+    document.getElementById('gifgmaychoigame').style.display = 'none';
+});
+document.getElementById('nhatkicomau').addEventListener('click', function() {
+    this.style.display = 'none';
+    document.getElementById('gifnhatki').style.display = 'block';
+});
+document.getElementById('nhatkikhongmau').addEventListener('click', function() {
+    document.getElementById('nhatkicomau').style.display = 'block';
+    document.getElementById('gifnhatki').style.display = 'none';
+});
+document.getElementById('taptomaucomau').addEventListener('click', function() {
+    this.style.display = 'none';
+    document.getElementById('giftaptomau').style.display = 'block';
+});
+document.getElementById('taptomaukhongmau').addEventListener('click', function() {
+    document.getElementById('taptomaucomau').style.display = 'block';
+    document.getElementById('giftaptomau').style.display = 'none';
+});
+document.getElementById('vosocomau').addEventListener('click', function() {
+    this.style.display = 'none';
+    document.getElementById('gifvoso').style.display = 'block';
+});
+document.getElementById('vosokhongmau').addEventListener('click', function() {
+    document.getElementById('vosocomau').style.display = 'block';
+    document.getElementById('gifvoso').style.display = 'none';
+});
+document.getElementById('xephinhcomau').addEventListener('click', function() {
+    this.style.display = 'none';
+    document.getElementById('gifxephinh').style.display = 'block';
+});
+document.getElementById('xephinhkhongmau').addEventListener('click', function() {
+    document.getElementById('xephinhcomau').style.display = 'block';
+    document.getElementById('gifxephinh').style.display = 'none';
+});
+</script>
+
+
 </body>
 </html>
