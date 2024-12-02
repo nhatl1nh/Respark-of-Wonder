@@ -21,6 +21,14 @@
 
     </head>
     <body>
+        <div id=loading-screen  >
+            <img id="loadinggif"src="assets/loading.gif" alt="Loading" />
+        </div>
+        <script>
+            window.addEventListener('load', function() {
+                document.getElementById('loading-screen').style.display = 'none';
+            });
+        </script>
         <div class="background"></div>
         <nav class="topnav">
             <div class="logo">
@@ -91,6 +99,8 @@ document.addEventListener('alpine:init', () => {
             'linear-gradient(180deg, #F20071 0%, #FDFCFB 50%, #F20071 100%)',
             'linear-gradient(180deg, #00D18B 0%, #FDFCFB 50%, #00D18B 100%)',
             'linear-gradient(180deg, #F20071 0%, #FDFCFB 50%, #F20071 100%)',
+            'linear-gradient(180deg, #FDFCFB 50%, #0083C2 100%)',
+
         ],
         gradientsb : [
         'linear-gradient(180deg, #FDFCFB 50%, #FF8100 100%)',
@@ -99,6 +109,8 @@ document.addEventListener('alpine:init', () => {
             'linear-gradient(180deg,  #FDFCFB 50%, #F20071 100%)',
             'linear-gradient(180deg,  #FDFCFB 50%, #00D18B 100%)',
             'linear-gradient(180deg, #FDFCFB 50%, #F20071 100%)',
+            'linear-gradient(180deg, #FDFCFB 50%, #0083C2 100%)',
+
         ],
         init() {
             this.selectedAnswers = Array(this.questions.length).fill(null);
@@ -147,6 +159,7 @@ document.addEventListener('alpine:init', () => {
             } else {
                 personality = 'tie';
             }
+            document.getElementById('loading-screen').style.display = 'block';
 
             setTimeout(() => {
                 window.location.href = `./assets/RESULT/Dreamchaser/${personality}.png`;
