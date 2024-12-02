@@ -21,10 +21,18 @@
 
     </head>
     <body>
+        <div id=loading-screen  >
+            <img id="loadinggif"src="assets/loading.gif" alt="Loading" />
+        </div>
+        <script>
+            window.addEventListener('load', function() {
+                document.getElementById('loading-screen').style.display = 'none';
+            });
+        </script>
         <div class="backgroundconstructor"></div>
         <nav class="topnav">
             <div class="logoresult">
-                <a href="index.html"><img src="assets/Test/RSOW sticker.svg"></a>
+                <a href="index.html"><img id=ROWsticker src="assets/Test/RSOW sticker.png"></a>
             </div>
         </nav>
         <div class="container">
