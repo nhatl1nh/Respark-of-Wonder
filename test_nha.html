@@ -112,10 +112,10 @@ document.addEventListener('alpine:init', () => {
             'linear-gradient(to bottom, #FDFCFB , #00D241 )'
         ],
         selectAnswer(index) {
-            if (this.currentQuestion < 2) {
-                this.answersCount[index] += 2;
+            if (this.currentQuestion < 3) {
+                this.answersCount[index] += 3.5;
             } else {
-                this.answersCount[index]++;
+                this.answersCount[index] += 0.4;
             }
             this.currentQuestion++;
             if (this.currentQuestion >= this.questions.length) {
