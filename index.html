@@ -8,15 +8,15 @@
         <link rel="stylesheet" href="css/style.css">
         <!--SE0-->
         <meta name="description" content="Respark of Wonder is a project to see your innerchild">
-        <meta name="keywords" content="Respark of Wonder, innerchild, wonder, project">
+        <meta name="keywords" content="Respark of Wonder, innerchild, wonder, project, Mass Media, Mass">
         <meta name="author" content="Mass Media">
+        <meta property="og:type" content="website">
         <!--Favicon-->
-        <link rel="icon" href="assets/ROW logo.svg" type="image/x-icon">
-        <link rel="shortcut icon" href="assets/ROW logo.svg" type="image/x-icon">
+        <link rel="icon" href="assets/ROW.svg" type="image/x-icon">
+        <link rel="shortcut icon" href="assets/ROW.svg" type="image/x-icon">
         <!-- Mobile icons -->
-        <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
-        <link rel="apple-touch-icon" href="./apple-touch-icon.png">
-        <link rel="manifest" href="./assets/app.manifest">
+        <link rel="icon" href="assets/ROW.svg" type="image/svg+xml">
+        <link rel="apple-touch-icon" href="assets/ROW.svg">
         <meta name="theme-color" content="#000">
 </head>
 <body>
@@ -28,11 +28,6 @@
             document.getElementById('loading-screen').style.display = 'none';
         });
     </script>
-    <nav class="topnav">
-        <div class="logoresult">
-            <a href="index.html"><img id=ROWsticker src="assets/Test/RSOW sticker.png"></a>
-        </div>
-    </nav>
 <div ><img class="homepagebg" src="assets/Homepage/BANNER.gif"></div>
 <div class="table"></div>
 <div class="redirect-button">
@@ -70,52 +65,80 @@
 
 </div>
 <script>
+function resetDisplays() {
+    document.getElementById('maychoigamecomau').style.display = 'block';
+    document.getElementById('maychoigamekhongmau').style.display = 'none';
+    document.getElementById('gifgmaychoigame').style.display = 'none';
+    document.getElementById('nhatkicomau').style.display = 'block';
+    document.getElementById('nhatkikhongmau').style.display = 'none';
+    document.getElementById('gifnhatki').style.display = 'none';
+    document.getElementById('taptomaucomau').style.display = 'block';
+    document.getElementById('taptomaukhongmau').style.display = 'none';
+    document.getElementById('giftaptomau').style.display = 'none';
+    document.getElementById('vosocomau').style.display = 'block';
+    document.getElementById('vosokhongmau').style.display = 'none';
+    document.getElementById('gifvoso').style.display = 'none';
+    document.getElementById('xephinhcomau').style.display = 'block';
+    document.getElementById('xephinhkhongmau').style.display = 'none';
+    document.getElementById('gifxephinh').style.display = 'none';
+}
+
 document.getElementById('maychoigamecomau').addEventListener('click', function() {
+    resetDisplays();
     this.style.display = 'none';
     document.getElementById('maychoigamekhongmau').style.display = 'block';
     document.getElementById('gifgmaychoigame').style.display = 'block';
 });
 document.getElementById('maychoigamekhongmau').addEventListener('click', function() {
+    resetDisplays();
     this.style.display = 'none';
     document.getElementById('maychoigamecomau').style.display = 'block';
     document.getElementById('gifgmaychoigame').style.display = 'none';
 });
 document.getElementById('nhatkicomau').addEventListener('click', function() {
+    resetDisplays();
     this.style.display = 'none';
     document.getElementById('nhatkikhongmau').style.display = 'block';
     document.getElementById('gifnhatki').style.display = 'block';
 });
 document.getElementById('nhatkikhongmau').addEventListener('click', function() {
+    resetDisplays();
     this.style.display = 'none';
     document.getElementById('nhatkicomau').style.display = 'block';
     document.getElementById('gifnhatki').style.display = 'none';
 });
 document.getElementById('taptomaucomau').addEventListener('click', function() {
+    resetDisplays();
     this.style.display = 'none';
     document.getElementById('taptomaukhongmau').style.display = 'block';
     document.getElementById('giftaptomau').style.display = 'block';
 });
 document.getElementById('taptomaukhongmau').addEventListener('click', function() {
+    resetDisplays();
     this.style.display = 'none';
     document.getElementById('taptomaucomau').style.display = 'block';
     document.getElementById('giftaptomau').style.display = 'none';
 });
 document.getElementById('vosocomau').addEventListener('click', function() {
+    resetDisplays();
     this.style.display = 'none';
     document.getElementById('vosokhongmau').style.display = 'block';
     document.getElementById('gifvoso').style.display = 'block';
 });
 document.getElementById('vosokhongmau').addEventListener('click', function() {
+    resetDisplays();
     this.style.display = 'none';
     document.getElementById('vosocomau').style.display = 'block';
     document.getElementById('gifvoso').style.display = 'none';
 });
 document.getElementById('xephinhcomau').addEventListener('click', function() {
+    resetDisplays();
     this.style.display = 'none';
     document.getElementById('xephinhkhongmau').style.display = 'block';
     document.getElementById('gifxephinh').style.display = 'block';
 });
 document.getElementById('xephinhkhongmau').addEventListener('click', function() {
+    resetDisplays();
     this.style.display = 'none';
     document.getElementById('xephinhcomau').style.display = 'block';
     document.getElementById('gifxephinh').style.display = 'none';
