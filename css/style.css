@@ -654,7 +654,7 @@ ul {
     }
     ul {
         width: 80%;
-        bottom: 12vh;
+        bottom: 20vh;
         left: 37%;
     }
     li {
@@ -751,13 +751,14 @@ ul {
         display:none;
     }
     img#bg1 {
+        z-index: 1;
         height: 100vh;
         width: 180vw;
         transform: translate(-50%, -50%) rotate(90deg);
         left: 50%;
         top: 50%;
         position: absolute;
-        object-fit: contain;
+        object-fit: contain
     }
     img#bg3 {
         z-index: 2;
@@ -839,8 +840,24 @@ img.homepagebg {
     padding: 20px;
     text-align: center;
     background: linear-gradient(90deg, #5DDA00 0%, #ffffff 50%, #5DDA00 100%);
-    animation: tableMove 5s infinite;
     border: 1px solid #000;
+}
+@keyframes rainbowGradient {
+    0% {
+        background-position: linear-gradient(90deg, var(--color-green-angel) 0%, white 50%, var(--color-green-astronut) 100%);
+    }
+    50% {
+        background-position: linear-gradient(90deg, var(--color-pink-superstar) 0%, white 50%, var(--color-pink-superstar) 100%);
+    }
+    100% {
+        background-position: linear-gradient(90deg, var(--color-green-angel) 0%, white 50%, var(--color-green-astronut) 100%);
+    }
+}
+
+
+
+.table {
+    animation: rainbowGradient 5s linear infinite;
 }
 h3 {
     font-family: 'DFVN Pexel Grotesk';
