@@ -151,11 +151,11 @@ document.addEventListener('alpine:init', () => {
             this.questions.forEach((question, index) => {
                 const selectedAnswer = this.selectedAnswers[index];
                 if (selectedAnswer === 0) {
-                    scoreA += index < 4 ? 2 : 1;
+                    scoreA += index < 3 ? 3 : 1;
                 } else if (selectedAnswer === 1) {
-                    scoreB += index < 4 ? 2 : 1;
+                    scoreB += index < 3 ? 3 : 1;
                 } else if (selectedAnswer === 2) {
-                    scoreC += index < 4 ? 2 : 1;
+                    scoreC += index < 3 ? 3 : 1;
                 }
             });
 
@@ -166,8 +166,6 @@ document.addEventListener('alpine:init', () => {
                 personality = 'Witch';
             } else if (scoreC > scoreA && scoreC > scoreB) {
                 personality = 'Astronaut';
-            } else {
-                personality = 'tie';
             }
             document.getElementById('loading-screen').style.display = 'block';
 
