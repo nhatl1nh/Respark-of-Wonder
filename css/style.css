@@ -266,7 +266,7 @@ p.text {
         transform: translate(-50%, -50%) rotate(3deg);
     }
 }
-video {
+.video {
     position: absolute;
     top: 40%;
     left: 50%;
@@ -299,7 +299,7 @@ video {
     display: block;
     }
 
-    video {
+    .video {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -344,7 +344,7 @@ video {
         margin-left: 25vw;
     }
 
-    video {
+    .video {
         width: 200px;
         height: 200px;
     }
