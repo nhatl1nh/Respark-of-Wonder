@@ -274,7 +274,7 @@ video {
     border-radius: 50vh;
 }
 
-@media (max-width: 480px) {
+@media only screen and (max-device-width: 480px) {
     .logoresult {
         width: 15rem;
         height: 10rem;
@@ -531,7 +531,7 @@ img#bg9 {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5px 25px;
+    padding: 0 25px;
 }
 
 .answer-button {
@@ -680,7 +680,7 @@ ul {
         width: 100%;
     }
     img#bg1 {
-        height: 80%;
+        width:90%;
         transform: translate(-50%, -50%) ;
         left: 50%;
         top: 50%;
@@ -701,14 +701,7 @@ ul {
         left: 50%;
         transform: translate(-50%, -50%);
     }
-    #questionbg {
-        width: 530px;
-    height: 85px;
-        position: absolute;
-        top: 54%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
+
     .question_text {
         width: 35%;
         font-size: 1vw;
@@ -1028,7 +1021,7 @@ img#gifgmaychoigame,img#gifnhatki,img#giftaptomau
 #maychoigamecomau {
     animation: float 3s ease-in-out infinite;
 }
-@media (max-width: 768px) {
+@media only screen and  (max-width: 768px) {
     img#ROWsticker {
         width: 100%;
     }
