@@ -26,7 +26,22 @@
         <script>
             window.addEventListener('load', function() {
                 document.getElementById('loading-screen').style.display = 'none';
+                preloadGIFs();
             });
+
+            function preloadGIFs() {
+                const gifUrls = [
+                    'assets/Test/GIF/GIF1.gif',
+                    'assets/Test/GIF/GIF2.gif',
+                    'assets/Test/GIF/GIF3.gif',
+                    'assets/Test/GIF/GIF4.gif',
+                    'assets/Test/GIF/GIF5.gif'
+                ];
+                gifUrls.forEach(url => {
+                    const img = new Image();
+                    img.src = url;
+                });
+            }
         </script>
         <div class="background"></div>
         <div class="testnha-bg" alt="testnha-bg">
@@ -185,5 +200,6 @@ document.addEventListener('alpine:init', () => {
     }));
 });
 </script>
+
 
 <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
