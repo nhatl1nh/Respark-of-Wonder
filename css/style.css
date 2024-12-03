@@ -595,7 +595,7 @@ ul {
     transition: background 0.5s ease, transform 0.3s ease;
     transform: scale(1.05);
 }
-@media (max-width: 480px) {
+@media only screen and (max-device-width: 480px) {
     .logo {
         display:none;
     }
@@ -673,7 +673,7 @@ ul {
         left: calc(50% - 50vw + 4vh); /* Adjust the left position relative to img#bg1 */
     }
 }
-@media(max-width: 1440px) {
+@media only screen and (min-width: 960px) {
     .logo {
     width: 6%;
     height:7rem;
