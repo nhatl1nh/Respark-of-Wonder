@@ -151,11 +151,11 @@ document.addEventListener('alpine:init', () => {
             this.questions.forEach((question, index) => {
                 const selectedAnswer = this.selectedAnswers[index];
                 if (selectedAnswer === 0) {
-                    scoreA += index < 3 ? 3 : 1;
+                    scoreA += index < 3 ? 3.5 : (index < 5 ? 1.5 : 0.6);
                 } else if (selectedAnswer === 1) {
-                    scoreB += index < 3 ? 3 : 1;
+                    scoreB += index < 3 ? 3.5 : (index < 5 ? 1.5 : 0.6);
                 } else if (selectedAnswer === 2) {
-                    scoreC += index < 3 ? 3 : 1;
+                    scoreC += index < 3 ? 3.5 : (index < 5 ? 1.5 : 0.6);
                 }
             });
 
