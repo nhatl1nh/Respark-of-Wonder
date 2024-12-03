@@ -163,10 +163,11 @@ p.text {
     top: 72%;
     left: 50%;
     transform: translate(-50%, -50%);
+    margin-top: 6vh;
 
 }
 .btnpioneer {
-
+    margin-top: 3vh;
     border-radius: 35px;
     border: 2px solid white;
     background: none;
@@ -187,6 +188,7 @@ p.text {
     animation: jiggle 0.3s ease-in-out forwards;
 }
 .btnconstructor {
+    margin-top: 3vh;
     border-radius: 35px;
     border: 2px solid white;
     background: none;
@@ -207,6 +209,7 @@ p.text {
     animation: jiggle 0.3s ease-in-out forwards;
 }
 .btndreamchaser {
+    margin-top: 3vh;
     border-radius: 35px;
     border: 2px solid white;
     background: none;
@@ -228,6 +231,7 @@ p.text {
 }
 
 .btnnetworker {
+    margin-top: 3vh;
     border-radius: 35px;
     border: 2px solid white;
     background: none;
