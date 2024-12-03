@@ -63,7 +63,7 @@ body {
     left: 10%;
 }
 .logoresult {
-    width: 15%;
+    width: 10%;
     display: block;
     margin: auto;
     position: absolute;
@@ -87,7 +87,7 @@ img#ROWsticker {
 }
 img#loadinggif {
     position: fixed;
-    width: 35%;
+    width: 20%;
     z-index: 1000;
     top: 50%;
     left: 50%;
@@ -308,7 +308,6 @@ video {
 
     }
     p.text {
-        font-family: 'Ganh Type - Regular';
     font-size: 3.2vw;
     color: black;
     text-align: center;
@@ -465,36 +464,31 @@ img#bg6 {
 }
 img#bg7 {
     position: absolute;
-    width: 15%;
+    width: 17%;
     bottom: 40vh;
     left: 20vh;
     transform: translate(0, 0);
     z-index: -9;
 }
-#questionbg {
-    width: 525px;
-    height: 85px;
-    background-color: #F0F0F0;
-    border-radius: 15px;
-    border: 1px solid black;
-    position: absolute;
-    bottom: 42vh;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 img#bg8 {
     position: absolute;
-    width: 32%;
+    width: 35%;
     height: 100px;
-    top: 52%;
+    top: 53%;
     left: 50%;
     transform: translate(-50%, -50%);
     animation: blip 1s infinite;
+    z-index: 12;
 }
-
+img#bg9 {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    width: 19%;
+    height: auto;
+    transform: translate(0, 0);
+    z-index: -9;
+}
 @keyframes blip {
     0% {
         opacity: 1;
@@ -509,14 +503,26 @@ img#bg8 {
 .question_text {
     position: absolute;
     width: 28%;
-    top: 51%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
     font-family: 'DFVN Pexel Grotesk';
-    font-size: 1vw;
+    font-size: 0.8vw;
     color: black;
     text-align: center;
+    width: 520px;
+    height: 80px;
+    background-color: #F0F0F0;
+    border-radius: 15px;
+    border: 1px solid black;
+    position: absolute;
+    bottom: 42vh;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 25px;
 }
 
 .answer-button {
@@ -658,15 +664,15 @@ ul {
         left: calc(50% - 50vw + 4vh); /* Adjust the left position relative to img#bg1 */
     }
 }
-@media (min-width: 1280px) and (max-width: 1440px) {
+@media(max-width: 1440px) {
     .logo {
-        width: 7rem;
+    width: 6%;
     height:7rem;
     display: block;
     margin: auto;
     position: absolute;
     top: 12%;
-    left: 7%;
+    left: 10%;
     }
     img#ROWsticker {
         width: 100%;
@@ -694,10 +700,10 @@ ul {
         transform: translate(-50%, -50%);
     }
     #questionbg {
-        width: 560px;
+        width: 530px;
     height: 85px;
         position: absolute;
-        top: 50%;
+        top: 54%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
@@ -716,8 +722,8 @@ ul {
     }
     .answer-button,
     .answer-buttonnvat {
-        width: 350px;
-        margin-bottom: -5px;
+        width: 300px;
+        margin-bottom: -2px;
         height: 70px;
         font-size: 10px;
     }
@@ -725,12 +731,13 @@ ul {
         width: 52%;
         bottom: 20%;
         left: 50%;
+        margin-bottom: -3%;
     }
     li {
     }
     img#bg4-left,img#bg4-right {
         width: 15%;
-        bottom: 10vh;
+        bottom: 12vh;
     }
     img#bg7 {
         width: 12%;
