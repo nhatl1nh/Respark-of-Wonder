@@ -59,6 +59,21 @@
             </div>
         </div>
 <script>
+        function preloadGIFs() {
+        const gifPaths = [
+            'assets/Test/GIFNVAT/GIF1.gif',
+            'assets/Test/GIFNVAT/GIF2.gif',
+            'assets/Test/GIFNVAT/GIF3.gif',
+            'assets/Test/GIFNVAT/GIF4.gif',
+            'assets/Test/GIFNVAT/GIF5.gif',
+            'assets/Test/GIFNVAT/GIF6.gif',
+            'assets/Test/GIFNVAT/GIF7.gif'
+        ];
+        gifPaths.forEach(path => {
+            const img = new Image();
+            img.src = path;
+        });
+    }
     setTimeout(function() {
         if (Alpine.store('quizApp').currentQuestion >= Alpine.store('quizApp').questions.length) {
             window.location.href = `./assets/RESULT/Networker/${personality}.png`;
