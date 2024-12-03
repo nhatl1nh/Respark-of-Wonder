@@ -607,7 +607,8 @@ ul {
         left: 50%;
         top: 50%;
         position: absolute;    
-        object-fit:contain;
+        object-fit: cover;
+        z-index: 1;
     }
     img#bg3 {
         width: 90%;
@@ -744,74 +745,75 @@ ul {
     }
 }
 @media (max-width: 390px) {
-    img#ROWsticker {
-        width: 100%;
+    .logo {
+        display:none;
     }
     img#bg1 {
-        height: 150vh;
-        width: 190vw;
+        height: 100vh;
+        width: 180vw;
         transform: translate(-50%, -50%) rotate(90deg);
-        left: 52%;
-        top: 53%;
+        left: 50%;
+        top: 50%;
         position: absolute;
+        object-fit: contain;
     }
-
-    img#bg2 {
-        width: 80px;
-        height: 80px;
-    }
-
     img#bg3 {
-        width: 70%;
+        z-index: 2;
+        width: 90%;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, 0);
     }
-
-    img#bg4-left, img#bg4-right {
-        width: 12%;
-    }
-
-    img#bg5, img#bg6 {
-        width: 10%;
-    }
-
+    img#bg4-right,
+    img#bg5,
+    img#bg6,
     img#bg7 {
-        width: 12%;
+        display: none;
     }
-
-    #questionbg {
-        width: 400px;
-        height: 70px;
-    }
-
     img#bg8 {
-        width: 28%;
-        height: 80px;
+        width: 78%;
+        height: 100px;
+        top: 32%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
-
     .question_text {
-        width: 24%;
-        font-size: 2vw;
+        width: 70%;
+        font-size: 2.6vw;
+        margin-top: -35vw;
+        font-family: 'DFVN Pexel Grotesk' ;
     }
-
-    .answer-button, .answer-buttonnvat {
-        width: 280px;
+    .question_text {
+        margin-top: 0;
+        margin-bottom: 0;
+        position: absolute;
+        top: 32%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .answer-button,
+    .answer-buttonnvat {
+        width: 300px;
+        margin-bottom: -6px;
         height: 70px;
-        font-size: 14px;
+        font-size: 10px;
     }
-
     ul {
+        z-index: 4;
         width: 80%;
-        bottom: 10vh;
-        left: 33%;
+        bottom: 20vh;
+        left: 39%;
     }
     li {
         width: 70%;
     }
     img#bg4-left {
         width: 25%;
-        bottom: 8vh;
+        bottom: 9%;
         left: 4vh;
         transform: translate(0, 0);
-        z-index: -9;
+        z-index: 5;
+        left: calc(50% - 50vw + 4vh); /* Adjust the left position relative to img#bg1 */
     }
 }
 /*************HOMEPAGE**************/
