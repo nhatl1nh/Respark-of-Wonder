@@ -143,6 +143,28 @@ document.getElementById('xephinhkhongmau').addEventListener('click', function() 
     document.getElementById('xephinhcomau').style.display = 'block';
     document.getElementById('gifxephinh').style.display = 'none';
 });
+const characters = 'RE:SPARKI';
+
+function shuffleString(str) {
+    let arr = str.split('');
+    for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr.join('');
+}
+
+document.getElementById('redirect-button').addEventListener('mouseover', function() {
+    this.originalText = this.innerText;
+    this.interval = setInterval(() => {
+        this.innerText = shuffleString(characters);
+    }, 100);
+});
+
+document.getElementById('redirect-button').addEventListener('mouseout', function() {
+    clearInterval(this.interval);
+    this.innerText = this.originalText;
+});
 </script>
 
 
